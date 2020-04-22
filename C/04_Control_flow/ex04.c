@@ -3,14 +3,14 @@
 
 int main()
 {
-    int     round = 1;
-    char    yn;
-    int     again = 1;
-    int     i;
+    int    yn;
     int     num;
     int     win;
     int     x;
     int     N;
+    int     sub;
+    int     round = 1;
+    int     again = 1;
 
     printf("** Game Start **\n");
     while(again)
@@ -36,18 +36,22 @@ int main()
             printf("\nYOU WIN!\n");
         else
             printf("\nYOU LOSE! The answer was %d.\n", num);
-        i = 1;
-        getchar();
-        yn = '\0';
-a:
-        printf("\nTry more? (y/n) ");
-        scanf("%c", &yn);
-        if (yn == 'y')
-            again = 1;
-        else if (yn == 'n')
-            again = 0;
-        else
-            goto a;
+        sub = 1;
+        while (sub)
+        {
+            printf("\nTry more? (1: YES / 2: NO) ");
+            scanf("%d", &yn);
+            if (yn == 1)
+            {
+                again = 1;
+                sub = 0;
+            }
+            else if (yn == 2)
+            {
+                again = 0;
+                sub = 0;
+            }
+        }
     }
     printf("\n** Game End **\n");
     return (0);
