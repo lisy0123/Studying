@@ -1,2 +1,2 @@
-# CS Bachelors Degree Examination for Self-Education   
+# CS Bachelors Degree Examination for Self-Education
 
