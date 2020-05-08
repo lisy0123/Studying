@@ -3,26 +3,26 @@
 
 int stack[10];
 
-int POP(int top)
+int POP(int *top)
 {
-	if (top == -1)
+	if (*top == -1)
 	{
 		printf ("Stack is Empty!\n");
 		return (0);
 	}
 	else
-		return (stack[top--]);
+		return (stack[(*top)--]);
 }
 
-void PUSH(int top, int item)
+void PUSH(int *top, int item)
 {
-	if (top >= 10 - 1)
+	if (*top >= 10 - 1)
 	{
 		printf("Stack is Full!\n");
 		return;
 	}
 	else
-		stack[++top] = item;
+		stack[++(*top)] = item;
 }
 
 char evalPostfix(char *exp)
@@ -38,25 +38,22 @@ char evalPostfix(char *exp)
 		if (symbol != '+' && symbol != '-' && symbol != '*' && symbol != '/')
 		{
 			value = symbol - '0';
-			PUSH(top, value);
-			top++;
+			PUSH(&top, value);
 		}
 		else
 		{
-			op2 = POP(top);
-			top--;
-			op1 = POP(top);
-			top--;
+			op2 = POP(&top);
+			op1 = POP(&top);
 			switch (symbol)
 			{
-				case '+': PUSH(top, op1 + op2); top++; break;
-				case '-': PUSH(top, op1 - op2); top++; break;
-				case '*': PUSH(top, op1 * op2); top++; break;
-				case '/': PUSH(top, op1 / op2); top++; break;
+				case '+': PUSH(&top, op1 + op2); break;
+				case '-': PUSH(&top, op1 - op2); break;
+				case '*': PUSH(&top, op1 * op2); break;
+				case '/': PUSH(&top, op1 / op2); break;
 			}
 		}
 	}
-	return (POP(top));
+	return (POP(&top));
 }
 
 int main ()

@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main()
 {
@@ -16,6 +17,7 @@ int main()
     while(again)
     {
         printf("\n= %d Round Game =\n", round++);
+		srand((unsigned int)time(NULL));
         num = rand() % 100;
         win = 0;
         for (x = 0; x <= 6; x++)
