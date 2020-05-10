@@ -1,50 +1,95 @@
 # 컴퓨터시스템구조 - Computer System Structure
 
 [**컴퓨터시스템구조 \- Computer System Structure**](#%EC%BB%B4%ED%93%A8%ED%84%B0%EC%8B%9C%EC%8A%A4%ED%85%9C%EA%B5%AC%EC%A1%B0---computer-system-structure)
-   [1️⃣ 컴퓨터시스템 개요](#one-%EC%BB%B4%ED%93%A8%ED%84%B0%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B0%9C%EC%9A%94)
-     [1\. 역사 및 세대별 발전과정](#1-%EC%97%AD%EC%82%AC-%EB%B0%8F-%EC%84%B8%EB%8C%80%EB%B3%84-%EB%B0%9C%EC%A0%84%EA%B3%BC%EC%A0%95)
-		[- 제1세대 컴퓨터](#--%EC%A0%9C1%EC%84%B8%EB%8C%80-%EC%BB%B4%ED%93%A8%ED%84%B0)
-       [\- 제2세대 컴퓨터](#--%EC%A0%9C2%EC%84%B8%EB%8C%80-%EC%BB%B4%ED%93%A8%ED%84%B0)
-       [\- 제3세대 컴퓨터](#--%EC%A0%9C3%EC%84%B8%EB%8C%80-%EC%BB%B4%ED%93%A8%ED%84%B0)
-       [\- 제4세대 컴퓨터](#--%EC%A0%9C4%EC%84%B8%EB%8C%80-%EC%BB%B4%ED%93%A8%ED%84%B0)
-       [\- 차세대 컴퓨터](#--%EC%B0%A8%EC%84%B8%EB%8C%80-%EC%BB%B4%ED%93%A8%ED%84%B0)
-     [2\. 컴퓨터 기본구조](#2-%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B8%B0%EB%B3%B8%EA%B5%AC%EC%A1%B0)
-       [\- 구성요소](#--%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C)
-       [\- 폰노이만 모델](#--%ED%8F%B0%EB%85%B8%EC%9D%B4%EB%A7%8C-%EB%AA%A8%EB%8D%B8)
-       [\- 시스템버스 모델](#--%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%B2%84%EC%8A%A4-%EB%AA%A8%EB%8D%B8)
-     [3\. 컴퓨터 분류](#3-%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%B6%84%EB%A5%98)
-       [\- 처리성능과 규모에 따른 분류 \- PC, 미니, 메인프레임, 슈퍼컴퓨터 등](#--%EC%B2%98%EB%A6%AC%EC%84%B1%EB%8A%A5%EA%B3%BC-%EA%B7%9C%EB%AA%A8%EC%97%90-%EB%94%B0%EB%A5%B8-%EB%B6%84%EB%A5%98---pc-%EB%AF%B8%EB%8B%88-%EB%A9%94%EC%9D%B8%ED%94%84%EB%A0%88%EC%9E%84-%EC%8A%88%ED%8D%BC%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%93%B1)
-       [\- 구조에 따른 분류 \- 병렬컴퓨터, 분산컴퓨팅, 클라우드컴퓨팅 등](#--%EA%B5%AC%EC%A1%B0%EC%97%90-%EB%94%B0%EB%A5%B8-%EB%B6%84%EB%A5%98---%EB%B3%91%EB%A0%AC%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%B6%84%EC%82%B0%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%BB%B4%ED%93%A8%ED%8C%85-%EB%93%B1)
-   [2️⃣ 데이터 표현 및 연산](#two-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%91%9C%ED%98%84-%EB%B0%8F-%EC%97%B0%EC%82%B0)
-     [1\. 진법과 진법변환](#1-%EC%A7%84%EB%B2%95%EA%B3%BC-%EC%A7%84%EB%B2%95%EB%B3%80%ED%99%98)
-       [\- 진법](#--%EC%A7%84%EB%B2%95)
-       [\- 진법 변환](#--%EC%A7%84%EB%B2%95-%EB%B3%80%ED%99%98)
-     [2\. 보수](#2-%EB%B3%B4%EC%88%98)
-       [\- 보수체계](#--%EB%B3%B4%EC%88%98%EC%B2%B4%EA%B3%84)
-       [\- 보수를 이용한 연산](#--%EB%B3%B4%EC%88%98%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%97%B0%EC%82%B0)
-     [3\. 데이터의 표현](#3-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9D%98-%ED%91%9C%ED%98%84)
-       [\- 정수표현](#--%EC%A0%95%EC%88%98%ED%91%9C%ED%98%84)
-       [\- 부동소수점표현](#--%EB%B6%80%EB%8F%99%EC%86%8C%EC%88%98%EC%A0%90%ED%91%9C%ED%98%84)
-       [\- 문자표현 및 코드체계](#--%EB%AC%B8%EC%9E%90%ED%91%9C%ED%98%84-%EB%B0%8F-%EC%BD%94%EB%93%9C%EC%B2%B4%EA%B3%84)
-     [4\. 연산](#4-%EC%97%B0%EC%82%B0)
-       [\- 산술연산](#--%EC%82%B0%EC%88%A0%EC%97%B0%EC%82%B0)
-       [\- 논린연산](#--%EB%85%BC%EB%A6%B0%EC%97%B0%EC%82%B0)
-       [\- 비트연산](#--%EB%B9%84%ED%8A%B8%EC%97%B0%EC%82%B0)
-   [3️⃣</g\-emoji> 디지털 논리회로](#three-%EB%94%94%EC%A7%80%ED%84%B8-%EB%85%BC%EB%A6%AC%ED%9A%8C%EB%A1%9C)
-     [1\. 부울대수 및 논리게이트](#1-%EB%B6%80%EC%9A%B8%EB%8C%80%EC%88%98-%EB%B0%8F-%EB%85%BC%EB%A6%AC%EA%B2%8C%EC%9D%B4%ED%8A%B8)
-       [\- 부울대수](#--%EB%B6%80%EC%9A%B8%EB%8C%80%EC%88%98)
-       [\- 부울함수의 간략화](#--%EB%B6%80%EC%9A%B8%ED%95%A8%EC%88%98%EC%9D%98-%EA%B0%84%EB%9E%B5%ED%99%94)
-       [\- 논리게이트 \- AND, OR, NOT, XOR, NAND, NOR 등](#--%EB%85%BC%EB%A6%AC%EA%B2%8C%EC%9D%B4%ED%8A%B8---and-or-not-xor-nand-nor-%EB%93%B1)
-       [\- 논리 회로(logic diagram)](#--%EB%85%BC%EB%A6%AC-%ED%9A%8C%EB%A1%9Clogic-diagram)
-     [2\. 조합 논리회로](#2-%EC%A1%B0%ED%95%A9-%EB%85%BC%EB%A6%AC%ED%9A%8C%EB%A1%9C)
-       [\- 가산기](#--%EA%B0%80%EC%82%B0%EA%B8%B0)
-       [\- 멀티플렉서, 디멀티플렉서](#--%EB%A9%80%ED%8B%B0%ED%94%8C%EB%A0%89%EC%84%9C-%EB%94%94%EB%A9%80%ED%8B%B0%ED%94%8C%EB%A0%89%EC%84%9C)
-       [\- 인코더, 디코더](#--%EC%9D%B8%EC%BD%94%EB%8D%94-%EB%94%94%EC%BD%94%EB%8D%94)
-     [3\. 순차 논리회로](#3-%EC%88%9C%EC%B0%A8-%EB%85%BC%EB%A6%AC%ED%9A%8C%EB%A1%9C)
-       [\- 플립플롭](#--%ED%94%8C%EB%A6%BD%ED%94%8C%EB%A1%AD)
-       [\- 레지스터](#--%EB%A0%88%EC%A7%80%EC%8A%A4%ED%84%B0)
-       [\- 카운터](#--%EC%B9%B4%EC%9A%B4%ED%84%B0)
-       [\- 메모리셀](#--%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%85%80)
+
+	[1️⃣ 컴퓨터시스템 개요](#one-%EC%BB%B4%ED%93%A8%ED%84%B0%EC%8B%9C%EC%8A%A4%ED%85%9C-%EA%B0%9C%EC%9A%94)
+	
+		[1\. 역사 및 세대별 발전과정](#1-%EC%97%AD%EC%82%AC-%EB%B0%8F-%EC%84%B8%EB%8C%80%EB%B3%84-%EB%B0%9C%EC%A0%84%EA%B3%BC%EC%A0%95)
+	
+			[- 제1세대 컴퓨터](#--%EC%A0%9C1%EC%84%B8%EB%8C%80-%EC%BB%B4%ED%93%A8%ED%84%B0)
+		
+			[\- 제2세대 컴퓨터](#--%EC%A0%9C2%EC%84%B8%EB%8C%80-%EC%BB%B4%ED%93%A8%ED%84%B0)
+	
+			[\- 제3세대 컴퓨터](#--%EC%A0%9C3%EC%84%B8%EB%8C%80-%EC%BB%B4%ED%93%A8%ED%84%B0)
+	
+			[\- 제4세대 컴퓨터](#--%EC%A0%9C4%EC%84%B8%EB%8C%80-%EC%BB%B4%ED%93%A8%ED%84%B0)
+	
+			[\- 차세대 컴퓨터](#--%EC%B0%A8%EC%84%B8%EB%8C%80-%EC%BB%B4%ED%93%A8%ED%84%B0)
+	
+		[2\. 컴퓨터 기본구조](#2-%EC%BB%B4%ED%93%A8%ED%84%B0-%EA%B8%B0%EB%B3%B8%EA%B5%AC%EC%A1%B0)
+	
+			[\- 구성요소](#--%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C)
+		
+			[\- 폰노이만 모델](#--%ED%8F%B0%EB%85%B8%EC%9D%B4%EB%A7%8C-%EB%AA%A8%EB%8D%B8)
+	
+			[\- 시스템버스 모델](#--%EC%8B%9C%EC%8A%A4%ED%85%9C%EB%B2%84%EC%8A%A4-%EB%AA%A8%EB%8D%B8)
+	
+		[3\. 컴퓨터 분류](#3-%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%B6%84%EB%A5%98)
+	
+			[\- 처리성능과 규모에 따른 분류 \- PC, 미니, 메인프레임, 슈퍼컴퓨터 등](#--%EC%B2%98%EB%A6%AC%EC%84%B1%EB%8A%A5%EA%B3%BC-%EA%B7%9C%EB%AA%A8%EC%97%90-%EB%94%B0%EB%A5%B8-%EB%B6%84%EB%A5%98---pc-%EB%AF%B8%EB%8B%88-%EB%A9%94%EC%9D%B8%ED%94%84%EB%A0%88%EC%9E%84-%EC%8A%88%ED%8D%BC%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%93%B1)
+	
+			[\- 구조에 따른 분류 \- 병렬컴퓨터, 분산컴퓨팅, 클라우드컴퓨팅 등](#--%EA%B5%AC%EC%A1%B0%EC%97%90-%EB%94%B0%EB%A5%B8-%EB%B6%84%EB%A5%98---%EB%B3%91%EB%A0%AC%EC%BB%B4%ED%93%A8%ED%84%B0-%EB%B6%84%EC%82%B0%EC%BB%B4%ED%93%A8%ED%8C%85-%ED%81%B4%EB%9D%BC%EC%9A%B0%EB%93%9C%EC%BB%B4%ED%93%A8%ED%8C%85-%EB%93%B1)
+	
+	[2️⃣ 데이터 표현 및 연산](#two-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%91%9C%ED%98%84-%EB%B0%8F-%EC%97%B0%EC%82%B0)
+	
+		[1\. 진법과 진법변환](#1-%EC%A7%84%EB%B2%95%EA%B3%BC-%EC%A7%84%EB%B2%95%EB%B3%80%ED%99%98)
+			
+			[\- 진법](#--%EC%A7%84%EB%B2%95)
+	
+			[\- 진법 변환](#--%EC%A7%84%EB%B2%95-%EB%B3%80%ED%99%98)
+	
+		[2\. 보수](#2-%EB%B3%B4%EC%88%98)
+	
+			[\- 보수체계](#--%EB%B3%B4%EC%88%98%EC%B2%B4%EA%B3%84)
+	
+			[\- 보수를 이용한 연산](#--%EB%B3%B4%EC%88%98%EB%A5%BC-%EC%9D%B4%EC%9A%A9%ED%95%9C-%EC%97%B0%EC%82%B0)
+	
+		[3\. 데이터의 표현](#3-%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%9D%98-%ED%91%9C%ED%98%84)
+	
+			[\- 정수표현](#--%EC%A0%95%EC%88%98%ED%91%9C%ED%98%84)
+	
+			[\- 부동소수점표현](#--%EB%B6%80%EB%8F%99%EC%86%8C%EC%88%98%EC%A0%90%ED%91%9C%ED%98%84)
+	
+			[\- 문자표현 및 코드체계](#--%EB%AC%B8%EC%9E%90%ED%91%9C%ED%98%84-%EB%B0%8F-%EC%BD%94%EB%93%9C%EC%B2%B4%EA%B3%84)
+	
+		[4\. 연산](#4-%EC%97%B0%EC%82%B0)
+	
+			[\- 산술연산](#--%EC%82%B0%EC%88%A0%EC%97%B0%EC%82%B0)
+	
+			[\- 논린연산](#--%EB%85%BC%EB%A6%B0%EC%97%B0%EC%82%B0)
+	
+			[\- 비트연산](#--%EB%B9%84%ED%8A%B8%EC%97%B0%EC%82%B0)
+	[3️⃣</g\-emoji> 디지털 논리회로](#three-%EB%94%94%EC%A7%80%ED%84%B8-%EB%85%BC%EB%A6%AC%ED%9A%8C%EB%A1%9C)
+	
+		[1\. 부울대수 및 논리게이트](#1-%EB%B6%80%EC%9A%B8%EB%8C%80%EC%88%98-%EB%B0%8F-%EB%85%BC%EB%A6%AC%EA%B2%8C%EC%9D%B4%ED%8A%B8)
+	
+			[\- 부울대수](#--%EB%B6%80%EC%9A%B8%EB%8C%80%EC%88%98)
+	
+			[\- 부울함수의 간략화](#--%EB%B6%80%EC%9A%B8%ED%95%A8%EC%88%98%EC%9D%98-%EA%B0%84%EB%9E%B5%ED%99%94)
+	
+			[\- 논리게이트 \- AND, OR, NOT, XOR, NAND, NOR 등](#--%EB%85%BC%EB%A6%AC%EA%B2%8C%EC%9D%B4%ED%8A%B8---and-or-not-xor-nand-nor-%EB%93%B1)
+	
+			[\- 논리 회로(logic diagram)](#--%EB%85%BC%EB%A6%AC-%ED%9A%8C%EB%A1%9Clogic-diagram)
+	
+		[2\. 조합 논리회로](#2-%EC%A1%B0%ED%95%A9-%EB%85%BC%EB%A6%AC%ED%9A%8C%EB%A1%9C)
+	
+			[\- 가산기](#--%EA%B0%80%EC%82%B0%EA%B8%B0)
+	
+			[\- 멀티플렉서, 디멀티플렉서](#--%EB%A9%80%ED%8B%B0%ED%94%8C%EB%A0%89%EC%84%9C-%EB%94%94%EB%A9%80%ED%8B%B0%ED%94%8C%EB%A0%89%EC%84%9C)
+	
+			[\- 인코더, 디코더](#--%EC%9D%B8%EC%BD%94%EB%8D%94-%EB%94%94%EC%BD%94%EB%8D%94)
+	
+		[3\. 순차 논리회로](#3-%EC%88%9C%EC%B0%A8-%EB%85%BC%EB%A6%AC%ED%9A%8C%EB%A1%9C)
+	
+			[\- 플립플롭](#--%ED%94%8C%EB%A6%BD%ED%94%8C%EB%A1%AD)
+	
+			[\- 레지스터](#--%EB%A0%88%EC%A7%80%EC%8A%A4%ED%84%B0)
+	
+			[\- 카운터](#--%EC%B9%B4%EC%9A%B4%ED%84%B0)
+	
+			[\- 메모리셀](#--%EB%A9%94%EB%AA%A8%EB%A6%AC%EC%85%80)
+
+
    [4️⃣ CPU의 구조와 기능](#four-cpu%EC%9D%98-%EA%B5%AC%EC%A1%B0%EC%99%80-%EA%B8%B0%EB%8A%A5)
      [1\. CPU 구성요소](#1-cpu-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C)
        [\- 산술논리장치](#--%EC%82%B0%EC%88%A0%EB%85%BC%EB%A6%AC%EC%9E%A5%EC%B9%98)
