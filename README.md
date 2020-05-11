@@ -8,17 +8,17 @@
 
 ## :two: Second Exam
 
-### [컴퓨터시스템구조 - Computer System Structure](https://github.com/lisy0123/CS_Bachelors_Degree_Examination_for_Self-Education/blob/master/1/Computer_System_Structure.md)
+### [컴퓨터시스템구조 - Computer System Structure](https://github.com/lisy0123/CS_Bachelors_Degree_Examination_for_Self-Education/blob/master/1/Computer_System_Structure.pdf)
 
-### [디지털논리회로 - Digital Logic Circuit](https://github.com/lisy0123/CS_Bachelors_Degree_Examination_for_Self-Education/blob/master/1/Digital_Logic_Circuit.md)
+### [디지털논리회로 - Digital Logic Circuit](https://github.com/lisy0123/CS_Bachelors_Degree_Examination_for_Self-Education/blob/master/1/Digital_Logic_Circuit.pdf)
 
-### [시스템프로그래밍 - System Programming](https://github.com/lisy0123/CS_Bachelors_Degree_Examination_for_Self-Education/blob/master/1/System_Programming.md)
+### [시스템프로그래밍 - System Programming](https://github.com/lisy0123/CS_Bachelors_Degree_Examination_for_Self-Education/blob/master/1/System_Programming.pdf)
 
-### [자료구조 - Data Structure](https://github.com/lisy0123/CS_Bachelors_Degree_Examination_for_Self-Education/blob/master/1/Data_structure/Data_Structure.md)
+### [자료구조 - Data Structure](https://github.com/lisy0123/CS_Bachelors_Degree_Examination_for_Self-Education/blob/master/1/Data_structure/Data_Structure.pdf)
 
-### [이산수학 - Discrete Mathematics](https://github.com/lisy0123/CS_Bachelors_Degree_Examination_for_Self-Education/blob/master/1/Discrete_Mathematics.md)
+### [이산수학 - Discrete Mathematics](https://github.com/lisy0123/CS_Bachelors_Degree_Examination_for_Self-Education/blob/master/1/Discrete_Mathematics.pdf)
 
-### [C 프로그래밍 - C Programming](https://github.com/lisy0123/CS_Bachelors_Degree_Examination_for_Self-Education/blob/master/1/C/C_Programming.md)
+### [C 프로그래밍 - C Programming](https://github.com/lisy0123/CS_Bachelors_Degree_Examination_for_Self-Education/blob/master/1/C/C_Programming.pdf)
 
 ---
 
