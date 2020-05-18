@@ -136,15 +136,209 @@
 
 ## 2. 디지털 코드
 
+==**컴퓨터시스템구조 > :two: 데이터 표현 및 연산 참고**==
+
 ---
 
 # :three: 부울대수와 논리게이트
 
 ## 1. 논리연산과 논리게이트
 
-## 2. 부울대수
+### - 논리연산
+
+2개의 이산값에 적용되는, 논리적 의미를 갖는 연산
+
+### - 논리연산의 종류
+
+- **AND 연산** :  $XY=F$
+
+- **OR 연산**    :  $X+Y=F$
+
+- **NOT 연산** :  $\overline{B}=F$
+
+### - 논리게이트의 종류 및 특성
+
+#### - 논리회로
+
+적절하게 입력된 신호를 가지고 논리적 조작을 수행
+
+출력신호를 생성하는 전자적 회로로 이때 사용되는 정보는 0이나 1을 나타내는 2진 신호로 표시
+
+각각 2개의 분리된 전압 레벨의 출력으로 나타낼 수 있음
+
+#### - 기본 논리게이트
+
+- **AND 게이트**: 논리적 곱 수행
+- **OR 게이트**: 논리적 합 수행
+- **NOT 게이트**: 인버터(inverter) 수행
+
+#### - 기타 논리게이트
+
+- **NAND 게이트**: 논리적 곱의 보수(AND-NOT) 수행
+- **NOR 게이트**: 논리적 합의 보수(OR-NOT) 수행
+- **XOR 게이트**: 비교연산 수행
+- **XNOR 게이트**: XOR 보수, 비교연산 수행
+
+|       기호이름        |                       변별기호                        | 대수식                                                       |                            진리표                            |
+| :-------------------: | :---------------------------------------------------: | ------------------------------------------------------------ | :----------------------------------------------------------: |
+|         $AND$         |    ![and](/Users/sangeunlee/lisy/타임랩스/and.png)    | $F=XY$                                                       | $\begin{array}{cc|c}X&Y&F\\\hline0&0&0\\0&1&0\\1&0&0\\1&1&1\end{array}$ |
+|         $OR$          |     ![or](/Users/sangeunlee/lisy/타임랩스/or.png)     | $F=X+Y$                                                      | $\begin{array}{cc|c}X&Y&F\\\hline0&0&0\\0&1&1\\1&0&1\\1&1&1\end{array}$ |
+|         $NOT$         |    ![not](/Users/sangeunlee/lisy/타임랩스/not.png)    | $F=\overline{X}$                                             |      $\begin{array}{c|c}X&F\\\hline0&1\\1&0\end{array}$      |
+|         버퍼          | ![buffer](/Users/sangeunlee/lisy/타임랩스/buffer.png) | $F=X$                                                        |      $\begin{array}{c|c}X&F\\\hline0&0\\1&1\end{array}$      |
+|        $NAND$         |   ![nand](/Users/sangeunlee/lisy/타임랩스/nand.png)   | $F=\overline{XY}$                                            | $\begin{array}{cc|c}X&Y&F\\\hline0&0&1\\0&1&1\\1&0&1\\1&1&0\end{array}$ |
+|         $NOR$         |    ![nor](/Users/sangeunlee/lisy/타임랩스/nor.png)    | $F=\overline{X+Y}$                                           | $\begin{array}{cc|c}X&Y&F\\\hline0&0&1\\0&1&0\\1&0&0\\1&1&0\end{array}$ |
+|  $XOR$ (배타적$-OR$)  |    ![xor](/Users/sangeunlee/lisy/타임랩스/xor.png)    | $F=X\overline{Y}+\overline{X}Y=X\oplus Y$                    | $\begin{array}{cc|c}X&Y&F\\\hline0&0&0\\0&1&1\\1&0&1\\1&1&0\end{array}$ |
+| $XNOR$ (배타적$-NOR$) |   ![xnor](/Users/sangeunlee/lisy/타임랩스/xnor.png)   | $F=XY+\overline{X}\overline{Y}=\overline{X}\overline{\oplus}\overline{Y}$ | $\begin{array}{cc|c}X&Y&F\\\hline0&0&1\\0&1&0\\1&0&0\\1&1&1\end{array}$ |
+
+## 2. 부울대수 (Boolean algebra)
+
+2진 변수와 논리연산을 다루는 대수
+
+변수는 영문자로 표시
+
+논리연산에는 AND, OR와 보수의 세 가지 연산이 있음
+
+- **부울함수**(Boolean function)
+
+  논리변수와 상호관계를 나타내기 위해 부울변수, 부울상수(0, 1), 부울연산기호($\cdot,\;+,\;-$), 괄호 및 등호 등으로 나타내는 대수적인 표현
+
+부울함수를 진리표로 나타날 때는 진리표 하나로 결정
+
+부울함수를 대수식으로 나타낼 때는 다양한 형태의 식으로 표현할 수 있음
+
+### - 부울대수의 기본공식
+
+| 번호 | 기본공식                                        | 번호 | 기본공식                                        |                 |
+| :--: | ----------------------------------------------- | :--: | ----------------------------------------------- | :-------------: |
+|  1   | $X+0=X$                                         |  2   | $X\cdot 1=X$                                    |                 |
+|  3   | $X+1=1$                                         |  4   | $X\cdot 0=0$                                    |                 |
+|  5   | $X+X=X$                                         |  6   | $X\cdot X=X$                                    |                 |
+|  7   | $X+\overline{X}=1$                              |  8   | $X\cdot \overline{X}=0$                         |                 |
+|  9   | $\overline{\overline{X}}=X$                     |      |                                                 |                 |
+|  10  | $X+Y=Y+X$                                       |  11  | $XY=YX$                                         |    교환법칙     |
+|  12  | $X+(Y+Z)=(X+Y)+Z$                               |  13  | $X(YZ)=(XY)Z$                                   |    결합법칙     |
+|  14  | $X(Y+Z)=XY+XZ$                                  |  15  | $X+YZ=(X+Y)(X+Z)$                               |    분배법칙     |
+|  16  | $\overline{X+Y}=\overline{X}\cdot \overline{Y}$ |  17  | $\overline{X\cdot Y}=\overline{X}+\overline{Y}$ | 드모르간의 법칙 |
+|  18  | $X+X\cdot Y=X$                                  |  19  | $X\cdot (X+Y)=X$                                |    흡수정리     |
 
 ## 3. 부울함수의 정규형 및 표준형
+
+### - 정규형
+
+부울함수를 표현하는 대표적인 방법 중 하나
+
+함수의 항이 **최소항의 합(sum of minterm)**이나 **최대항의 곱(product of maxterm)**으로 표현된 식
+
+이 외의 함수는 비정규형(non-canonical form)
+
+#### - 최소항과 최대항
+
+- **최소항**
+
+  n개의 논리변수로 구성되는 부울함수에서 최소항이란 각 변수의 문자 1개씩 모두 n개의 문자의 논리곱항으로서 그 결과 논리-1인 경우
+
+- **최대항**
+
+  n개의 논리변수로 구성되는 부울함수에서 최대항이란 각 변수의 문자 1개씩 모두 n개의 문자의 논리합항으로써 그 결과 논리-1인 경우
+
+  | $X$  | $Y$  | $Z$  |               최소항-항                | 최소항-표시 |                최대항-항                 | 최대항-표시 |
+  | :--: | :--: | :--: | :------------------------------------: | :---------: | :--------------------------------------: | :---------: |
+  |  0   |  0   |  0   | $\overline{X}\overline{Y}\overline{Z}$ |    $m_0$    |                 $X+Y+Z$                  |    $M_0$    |
+  |  0   |  0   |  1   |      $\overline{X}\overline{Y}Z$       |    $m_1$    |            $X+Y+\overline{Z}$            |    $M_1$    |
+  |  0   |  1   |  0   |      $\overline{X}Y\overline{Z}$       |    $m_2$    |            $X+\overline{Y}+Z$            |    $M_2$    |
+  |  0   |  1   |  1   |            $\overline{X}YZ$            |    $m_3$    |      $X+\overline{Y}+\overline{Z}$       |    $M_3$    |
+  |  1   |  0   |  0   |      $X\overline{Y}\overline{Z}$       |    $m_4$    |            $\overline{X}+Y+Z$            |    $M_4$    |
+  |  1   |  0   |  1   |            $X\overline{Y}Z$            |    $m_5$    |      $\overline{X}+Y+\overline{Z}$       |    $M_5$    |
+  |  1   |  1   |  0   |            $XY\overline{Z}$            |    $m_6$    |      $\overline{X}+\overline{Y}+Z$       |    $M_6$    |
+  |  1   |  1   |  1   |                 $XYZ$                  |    $m_7$    | $\overline{X}+\overline{Y}+\overline{Z}$ |    $M_7$    |
+
+#### - 최소항의 합
+
+부울함수에서 n개의 2진 변수는 최대 $2^n$개의 서로 다른 최소항(AND 연산) 구성할 수 있음
+
+구성된 최소항을 OR 연산으로 결함하여 곱의 합으로 표시
+
+ex) 부울함수 $F=X+Y\overline{Z}$를 최소항의 합으로 표현
+
+$F=X+Y\overline{Z}$
+
+$\;\;\;=X(Y+\overline{Y})+(X+\overline{X})Y\overline{Z}$
+
+$\;\;\;=XY+X\overline{Y}+XY\overline{Z}+\overline{X}Y\overline{Z}$
+
+$\;\;\;=XY(Z+\overline{Z})+X\overline{Y}(Z+\overline{Z})+XY\overline{Z}+\overline{X}Y\overline{Z}$
+
+$\;\;\;=XYZ+XY\overline{Z}+X\overline{Y}Z+X\overline{Y}\overline{Z}+XY\overline{Z}+\overline{X}Y\overline{Z}$
+
+$\;\;\;=XYZ+XY\overline{Z}+X\overline{Y}Z+X\overline{Y}\overline{Z}+\overline{X}Y\overline{Z}$
+
+$\;\;\;=m_2+m_4+m_5+m_6+m_7$
+
+$\therefore F(X,\;Y,\;Z)=\sum m(2,\;4,\;5,\;6,\;7)$
+
+#### - 최대항의 곱
+
+n개의 변수로 구성된 $2^n$가지 함수들의 각각은 최대항의 곱으로 표현 가능
+
+ex) 부울함수 $F=XY+\overline{X}Z$를 최소항의 합으로 표현
+
+$F=XY+\overline{X}Z$
+
+$\;\;\;=(XY+\overline{X})+(XY+Z)$
+
+$\;\;\;=(X+\overline{X})(Y+\overline{X})(X+Z)(Y+Z)$
+
+$\;\;\;=(\overline{X}+Y)(X+Z)(Y+Z)$
+
+$\;\;\;=(\overline{X}+Y+Z\overline{Z})(X+Y\overline{Y}+Z)(X\overline{X}+Y+Z)$
+
+$\;\;\;=(\overline{X}+Y+Z)(\overline{X}+Y+\overline{Z})(X+Y+Z)(X+\overline{Y}+Z)(X+Y+Z)(\overline{X}+Y+Z)$
+
+$\;\;\;=(X+Y+Z)(X+\overline{Y}+Z)(\overline{X}+Y+Z)(\overline{X}+Y+\overline{Z})$
+
+$\;\;\;=M_0\cdot M_1\cdot M_2\cdot M_3$
+
+$\therefore F(X,\;Y,\;Z)=\prod M(0,\;2,\;4,\;5)$
+
+#### -정규형 간의 관계
+
+최소항의 합으로 표시된 함수의 보수는 원래 함수에서 제외된 최소항의 합으로, 
+
+어떤 함수를 표현하는 최소항은 함수를 1로 하지만, 그것의 보수를 표현하는 최소값은 처음 함수를 0으로 함
+
+$F=(X,\;Y,\;Z)=\sum m(2,\;4,\;5,\;6,\;7)=m_2+m_4+m_5+m_6+m_7$
+
+$\overline{F}=(X,\;Y,\;Z)=\sum m(0,\;1,\;3)=m_0+m_1+m_3$
+
+$F=(X,\;Y,\;Z)=\overline{\overline{F}}(X,\;Y,\;Z)=\prod M(0,\;1,\;3)=\sum m(2,\;4,\;5,\;6,\;7)$
+
+$\therefore \overline{m_i}=M_i$
+
+### - 표준형 (standard form)
+
+부울함수를 표현하는 또다른 방법
+
+표준형의 각 항은 하나 또는 그 이상의 문자로 구성
+
+곱의 합(sum of products)과 합의 곱(product of sums) 있음
+
+#### - 곱의 합
+
+부울함수에서 n개의 2진 변수는 최대 $2^n$개의 서로 다른 최소항(AND 연산)을 구성할 수 있음
+
+구성된 최소항을 OR 연산으로 결합
+
+$F=\overline{Y}+\overline{X}Y\overline{Z}+XY$
+
+![sum](/Users/sangeunlee/lisy/타임랩스/sum.png)
+
+#### - 합의 곱
+
+합항의 논리곱 형태
+
+각 논리합 항은 임의 개수의 리터럴(literal)을 가짐
+
+$F=X(\overline{Y}+Z)(Z+Y+\overline{Z})$
 
 ## 4. 집적회로
 
@@ -153,6 +347,32 @@
 # :four: 부울함수의 간소화 및 구현
 
 ## 1. 개요
+
+### - 부울함수의 대수적 간소화
+
+부울대수의 공식을 이용하여 변환한 후, 변환된 여러 함수 중에서 가장 간단한 형태의 함수를 찾아내는 것
+
+### - 대수적 간소화에서 주로 사용되는 방법
+
+- **항 결합**
+
+  $XY=X\overline{Y}=X(Y+\overline{Y})=X\cdot 1=X$
+
+- **문자 소거**
+
+  $X+\overline{X}Y=(X+\overline{X})(X+Y)=1\cdot (X+Y)=X+Y$
+
+  $X(\overline{X}+Y)=X\overline{X}+XY=0+XY=XY$
+
+- **중복항 첨가**
+
+  $F=X\overline{Y}Z+XYZ+\overline{X}YZ$
+
+  $\;\;\;=X\overline{Y}Z+XYZ+XYZ+\overline{X}YZ$
+
+  $\;\;\;=XZ(\overline{Y}+Y)+YZ(X+\overline{X})$
+
+  $\;\;\;=XZ+YZ$
 
 ## 2. 도표방법
 
@@ -193,6 +413,8 @@
 ## 1. 레지스터
 
 ## 2. 카운터
+
+## 3. 메모리셀
 
 ---
 
