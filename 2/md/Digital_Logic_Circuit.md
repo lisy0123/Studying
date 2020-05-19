@@ -221,6 +221,32 @@
 |  16  | $\overline{X+Y}=\overline{X}\cdot \overline{Y}$ |  17  | $\overline{X\cdot Y}=\overline{X}+\overline{Y}$ | 드모르간의 법칙 |
 |  18  | $X+X\cdot Y=X$                                  |  19  | $X\cdot (X+Y)=X$                                |    흡수정리     |
 
+### - 부울함수의 대수적 간소화
+
+부울대수의 공식을 이용하여 변환한 후, 변환된 여러 함수 중에서 가장 간단한 형태의 함수를 찾아내는 것
+
+### - 대수적 간소화에서 주로 사용되는 방법
+
+- **항 결합**
+
+  $XY=X\overline{Y}=X(Y+\overline{Y})=X\cdot 1=X$
+
+- **문자 소거**
+
+  $X+\overline{X}Y=(X+\overline{X})(X+Y)=1\cdot (X+Y)=X+Y$
+
+  $X(\overline{X}+Y)=X\overline{X}+XY=0+XY=XY$
+
+- **중복항 첨가**
+
+  $F=X\overline{Y}Z+XYZ+\overline{X}YZ$
+
+  $\;\;\;=X\overline{Y}Z+XYZ+XYZ+\overline{X}YZ$
+
+  $\;\;\;=XZ(\overline{Y}+Y)+YZ(X+\overline{X})$
+
+  $\;\;\;=XZ+YZ$
+
 ## 3. 부울함수의 정규형 및 표준형
 
 ### - 정규형
@@ -328,9 +354,7 @@ $\therefore \overline{m_i}=M_i$
 
 구성된 최소항을 OR 연산으로 결합
 
-$F=\overline{Y}+\overline{X}Y\overline{Z}+XY$
-
-![sum](/Users/sangeunlee/lisy/타임랩스/sum.png)
+<img src="/Users/sangeunlee/lisy/타임랩스/sum.png" alt="sum" style="zoom:90%;" /> - $F=\overline{Y}+\overline{X}Y\overline{Z}+XY$
 
 #### - 합의 곱
 
@@ -338,7 +362,7 @@ $F=\overline{Y}+\overline{X}Y\overline{Z}+XY$
 
 각 논리합 항은 임의 개수의 리터럴(literal)을 가짐
 
-$F=X(\overline{Y}+Z)(Z+Y+\overline{Z})$
+<img src="/Users/sangeunlee/lisy/타임랩스/product.png" alt="product" style="zoom:90%;" /> - $F=X(\overline{Y}+Z)(Z+Y+\overline{Z})$
 
 ## 4. 집적회로
 
@@ -348,35 +372,127 @@ $F=X(\overline{Y}+Z)(Z+Y+\overline{Z})$
 
 ## 1. 개요
 
-### - 부울함수의 대수적 간소화
+### - 부울함수의 간소화 방법
 
-부울대수의 공식을 이용하여 변환한 후, 변환된 여러 함수 중에서 가장 간단한 형태의 함수를 찾아내는 것
+- **대수적인 방법(algebraic method)**
 
-### - 대수적 간소화에서 주로 사용되는 방법
+  주어진 부울함수에 대해 부울대수의 정리를 대수적으로 적용하는 방법
 
-- **항 결합**
+- **도표방법(map method)**
 
-  $XY=X\overline{Y}=X(Y+\overline{Y})=X\cdot 1=X$
+  카르노도표(Karnaugh Map)라 불리는 도표를 사용하는 방법
 
-- **문자 소거**
+  부울함수의 각항은 하나의 곱형태로 쉽게 간소화
 
-  $X+\overline{X}Y=(X+\overline{X})(X+Y)=1\cdot (X+Y)=X+Y$
+  변수 많아짐에 따라 구성 복잡해져, 실제로 6개 또는 그 이하의 변수를 가진 변수만 대상으로 함
 
-  $X(\overline{X}+Y)=X\overline{X}+XY=0+XY=XY$
+- **테이블 방법(tabular method)**
 
-- **중복항 첨가**
+  퀸-맥클러스키 방법(Quine-Mcluskey Method)이라 함
 
-  $F=X\overline{Y}Z+XYZ+\overline{X}YZ$
+  테이블을 사용하여 간소화 알고리즘(minimization algorithm)을 쉽게 궆현
 
-  $\;\;\;=X\overline{Y}Z+XYZ+XYZ+\overline{X}YZ$
+  많은 변수를 갖고 있는 부울함수의 간소화에 적당
 
-  $\;\;\;=XZ(\overline{Y}+Y)+YZ(X+\overline{X})$
+## 2. 카르노도표 도표방법
 
-  $\;\;\;=XZ+YZ$
+### - 개요
 
-## 2. 도표방법
+여러 개의 사각형으로 된 그림
+
+사각형은 각각 하나의 최소항 또는 최대항 나타냄
+
+직관적으로 부울함수 간소화
+
+입력변수의 수가 n인 경우 **n수 카르노도표**라고 하며 $2^n$개의 사각형으로 구성
+
+### - 인접 사각형
+
+#### - 인접 사각형의 정의
+
+카르노도표에서 각 정사각형은 하나의 최소항
+
+부울공식인 $X+\overline{X}=1$을 이용해 간소화함
+
+#### - 인접 사각형끼리 묶는 방법
+
+한 묶음 내의 정사각형 수는 $2n(n=0.\;1,\;2,\;...,\;n)$개가 되도록 묶음
+
+한 묶음은 크게, 전체 묶음의 수는 작게 묶음
+
+### - 2변수 카르노도표
+
+![2](/Users/sangeunlee/lisy/타임랩스/2.png) ex) $F(X,\;Y)=\sum m(1,\;2,\;3)=\overline{X}Y+X\overline{Y}+XY=X+Y$
+
+### - 3변수 카르노도표
+
+<img src="/Users/sangeunlee/lisy/타임랩스/3.png" alt="3" style="zoom:90%;" /> ex) $F(X,\;Y,\;Z)=\sum m(0,\;1,\;2,\;6)=\overline{X}\overline{Y}+Y\overline{Z}$
+
+### - 4변수 카르노도표
+
+<img src="/Users/sangeunlee/lisy/타임랩스/4.png" alt="4" style="zoom:90%;" /> ex) $F(W,\;X,\;Y,\;Z)=\sum m(1,\;3,\;4,\;5,\;11,\;12,\;13)=X\overline{Y}+\overline{W}\overline{X}Z+\overline{W}YZ$
+
+### - 5변수 카르노도표
+
+### - 6변수 카르노도표
+
+### - 무관조건
+
+논리회로에서는 입력변수들의 조합에 따라서 함숫값이 발생하지 않는 경우나 0인나 1 중 어떠한 함숫값이 출력값으로 나와도 무관한 경우가 있음
+
+이 무관조건(don't care condition)은 함수를 더욱 간소화하는 데 사용됨
+
+ ex) $F(W,\;X,\;Y,\;Z)=\sum m(0,\;3,\;6,\;9)$
+
+​	   단, 무관조건은 $d(W,\;X,\;Y,\;Z)=\sum m(10,\;11,\;12,\;13,\;14,\;15)$
+
+<img src="/Users/sangeunlee/lisy/타임랩스/5.png" alt="5" style="zoom:90%;" /> - 곱의 합형 $F=\overline{W}\overline{X}\overline{Y}\overline{Z}+WZ+\overline{X}\overline{Y}\overline{Z}+XY\overline{Z}$
+
+<img src="/Users/sangeunlee/lisy/타임랩스/6.png" alt="6" style="zoom:90%;" /> - 합의 곱형 $(\overline{X}+Y)(\overline{X}+\overline{Z}) (\overline{W}+\overline{Z})(X+\overline{Y}+Z)$
+
+### - 기타 카르노도표
+
+**XOR 논리게이트**는 등가의 논리식으로 바꾸어 일반의 논리함수로 변환 가능
+
+<img src="/Users/sangeunlee/lisy/타임랩스/7.png" alt="7" style="zoom:72%;" /> - $X \oplus Y\oplus Z=(X\overline{Y}+\overline{X}Y)\overline{Z}+(XY+\overline{X}\overline{Y})Z=X\overline{Y}Z+\overline{X}Y\overline{Z}+\overline{X}\overline{Y}Z+XYZ$
+
+<img src="/Users/sangeunlee/lisy/타임랩스/8.png" alt="8" style="zoom:90%;" /> - $A\oplus B\oplus C\oplus D$
+
+<img src="/Users/sangeunlee/lisy/타임랩스/xyz.png" alt="xyz" style="zoom:90%;" />		<img src="/Users/sangeunlee/lisy/타임랩스/abcd.png" alt="abcd" style="zoom:90%;" />
+
+:arrow_up_small: $P=X\oplus Y\oplus Z$												:arrow_up_small: $P=A\oplus B\oplus C\oplus D$
 
 ## 3. NAND 게이트와 NOR 게이트
+
+### - NAND 게이트
+
+논리적 곱의 보수(AND-NOT) 수행하는 기능
+
+|   NOT   | <img src="/Users/sangeunlee/lisy/타임랩스/not.png" alt="not" style="zoom:90%;" /> | $\overline{X}$                            |
+| :-----: | :----------------------------------------------------------: | ----------------------------------------- |
+| **AND** | <img src="/Users/sangeunlee/lisy/타임랩스/nand1.png" alt="8" style="zoom:90%;" /> | $\overline{\overline{XY}}=XY$             |
+| **OR**  | <img src="/Users/sangeunlee/lisy/타임랩스/nand2.png" alt="8" style="zoom:90%;" /> | $\overline{\overline{X}\overline{Y}}=X+Y$ |
+
+<img src="/Users/sangeunlee/lisy/타임랩스/nand3.png" alt="nand3" style="zoom:90%;" /> - AND-NOT $\overline{XYZ}$		![nand4](/Users/sangeunlee/lisy/타임랩스/nand4.png) - NOT-OR $\overline{X}+\overline{Y}=\overline{XY}$
+
+ex) $F=XYZ+WX$
+
+<img src="/Users/sangeunlee/lisy/타임랩스/nand5.png" alt="nand5" style="zoom:90%;" />	<img src="/Users/sangeunlee/lisy/타임랩스/nand6.png" alt="nand6" style="zoom:90%;" />
+
+### - NOR 게이트
+
+논리적 합의 보수(OR-NOT) 수행하는 기능
+
+|   NOT   | <img src="/Users/sangeunlee/lisy/타임랩스/not.png" alt="not" style="zoom:90%;" /> | $\overline{X}$                            |
+| :-----: | :----------------------------------------------------------: | ----------------------------------------- |
+| **OR**  | <img src="/Users/sangeunlee/lisy/타임랩스/nor1.png" alt="8" style="zoom:90%;" /> | $\overline{\overline{X}\overline{Y}}=X+Y$ |
+| **AND** | <img src="/Users/sangeunlee/lisy/타임랩스/nor2.png" alt="8" style="zoom:90%;" /> | $\overline{\overline{XY}}=XY$             |
+
+<img src="/Users/sangeunlee/lisy/타임랩스/nor3.png" alt="nor3" style="zoom:90%;" /> - OR-NOT $\overline{X+Y+Z}$			![nor4](/Users/sangeunlee/lisy/타임랩스/nor4.png) - NOT-AND $\overline{X}\overline{Y}=\overline{X+Y}$
+
+ex) $F=W(XY+Z)(\overline{Y}\overline{Z}+\overline{W})$
+
+<img src="/Users/sangeunlee/lisy/타임랩스/nor5.png" alt="nor5" style="zoom:90%;" />	<img src="/Users/sangeunlee/lisy/타임랩스/nor6.png" alt="nor6" style="zoom:90%;" />
 
 ---
 
@@ -384,9 +500,107 @@ $F=X(\overline{Y}+Z)(Z+Y+\overline{Z})$
 
 ## 1. 개요
 
+### - 디지털 시스템을 구성하는 논리회로
+
+- **조합논리회로**
+
+  현재의 입력에 대해 현재 입력의 논리조합에 의해서만 출력값이 결정되는 회로
+
+  부울대수의 집합에 의해 표현되는 논리연산을 수행하는 여러 논리게이트(AND, OR, NOT)로 구성
+
+- **순서논리회로**
+
+- 조합 논리게이트에 플립플롭(flip-flop)이라는 저장요소 추가한 회로
+
+- 저장요소의 상태와 입력변수에 의해 출력이 결정됨
+
+### - 조합논리회로의 구성
+
+입력변수와 논리게이트, 출력변수로 구성
+
+각 출력변수에 해당하는 m개의 부울함수로 나타낼 수 있음
+
+각각의 출력 부울함수는 n개의 입력변수의 함수로 표현
+
 ## 2. 조합논리회로의 분석과 설계
 
+- **조합논리회로의 분석**
+
+  논리도로부터 출력 부울함수나 진리표를 구하는 것
+
+- **조합논리회로의 설계**
+
+  주어진 회로에 대한 설명으로부터 논리도를 구하는 것
+
+### - 조합논리회로의 분석
+
+#### - 부울함수의 유도
+
+1. 모든 게이트의 출력에 임의의 기호를 부여, 부울함수 구함
+2. 1에서 만든 출력을 입력으로 하는 게이트의 출력에 다시 임의의 기호를 붙여, 각 게이트에 대한 부울함수를 구함
+3. 입력변수의 함수로 된 회로출력을 얻을 때까지 과정 2 반복
+
+#### - 진리표 작성
+
+1. 회로에서 입력변수의 개수를 정하고, n개의 입력에 대해 표에 0부터 $2^n-1$까지 모두 $2^n$개의 2진수 리스트 작성
+2. 선택한 중간 출력게이트에 임의의 기호 붙임
+3. 입력변수로만 이루어진 출력게이트에 대해 진리표 작성
+4. 모든 출력란을 작성할 때까지 중간 출력함수 정리
+
+#### - 조합논리회로의 설계
+
+1. 입력, 출력 변수를 적당한 기호로 표시, 블록도 그림
+2. 입력, 출력 변수의 관계를 정의하는 진리표 작성
+3. 각각의 출력을 입력변수의 함수로 나타내고 간소화
+4. 논리회로도 그림
+
 ## 3. 기본 연산회로
+
+### - 가산기
+
+#### - 반가산기
+
+한 비트의 2진수에 다른 한 비트 2진수를 더하는 산술회로
+
+2개의 입력, 2개의 출력을 가짐
+
+- 반가산기의 진리표
+
+| 입력-$X$ | 입력-$Y$ | 출력-$S$ | 출력-$C$ |
+| :------: | :------: | :------: | :------: |
+|    0     |    0     |    0     |    0     |
+|    0     |    1     |    1     |    0     |
+|    1     |    0     |    1     |    0     |
+|    1     |    1     |    0     |    1     |
+
+$S=\overline{X}Y+X\overline{Y}=X\oplus Y$
+
+$C=XY$
+
+#### - 전가산기
+
+세 입력 비트의 합을 계산하는 조합논리회로
+
+입력변수를 X, Y, Z로 할때 X, Y는 더해질 현재 위치의 자릿수, Z는 올림수
+
+| 입력-$X$ | 입력-$Y$ | 입력-$Z(=C_i)$ | 출력-$S$ | 출력-$C$ |
+| :------: | :------: | :------------: | :------: | -------- |
+|    0     |    0     |       0        |    0     | 0        |
+|    0     |    0     |       1        |    1     | 0        |
+|    0     |    1     |       0        |    1     | 0        |
+|    0     |    1     |       1        |    0     | 1        |
+|    1     |    0     |       0        |    1     | 0        |
+|    1     |    0     |       1        |    0     | 1        |
+|    1     |    1     |       0        |    0     | 1        |
+|    1     |    1     |       1        |    1     | 1        |
+
+$S=\overline{X}\overline{Y}Z+\overline{X}Y\overline{Z}+X\overline{Y}\overline{Z}+XYZ=X\oplus Y\oplus Z$
+
+$C=XY+XZ+YZ=XY+Z(X\oplus Y)$
+
+
+
+#### - 직병렬 가산기
 
 ## 4. 여러가지 조합논리회로
 
