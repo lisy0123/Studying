@@ -16,10 +16,6 @@
 
 ### [자료구조 - Data Structure](https://github.com/lisy0123/CS_Bachelors_Degree_Examination_for_Self-Education/blob/master/2/Data_structure/Data_Structure.pdf)
 
-### [이산수학 - Discrete Mathematics](https://github.com/lisy0123/CS_Bachelors_Degree_Examination_for_Self-Education/blob/master/2/Discrete_Mathematics.pdf)
-
-### [C 프로그래밍 - C Programming](https://github.com/lisy0123/CS_Bachelors_Degree_Examination_for_Self-Education/blob/master/2/C_Programming.pdf)
-
 ---
 
 ## :three: Third Exam
