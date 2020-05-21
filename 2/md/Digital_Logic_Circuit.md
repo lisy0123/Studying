@@ -179,16 +179,16 @@
 - **XOR 게이트**: 비교연산 수행
 - **XNOR 게이트**: XOR 보수, 비교연산 수행
 
-|       기호이름        |                       변별기호                        | 대수식                                                       |                            진리표                            |
-| :-------------------: | :---------------------------------------------------: | ------------------------------------------------------------ | :----------------------------------------------------------: |
-|         $AND$         |    ![and](/Users/sangeunlee/lisy/타임랩스/and.png)    | $F=XY$                                                       | $\begin{array}{cc|c}X&Y&F\\\hline0&0&0\\0&1&0\\1&0&0\\1&1&1\end{array}$ |
-|         $OR$          |     ![or](/Users/sangeunlee/lisy/타임랩스/or.png)     | $F=X+Y$                                                      | $\begin{array}{cc|c}X&Y&F\\\hline0&0&0\\0&1&1\\1&0&1\\1&1&1\end{array}$ |
-|         $NOT$         |    ![not](/Users/sangeunlee/lisy/타임랩스/not.png)    | $F=\overline{X}$                                             |      $\begin{array}{c|c}X&F\\\hline0&1\\1&0\end{array}$      |
-|         버퍼          | ![buffer](/Users/sangeunlee/lisy/타임랩스/buffer.png) | $F=X$                                                        |      $\begin{array}{c|c}X&F\\\hline0&0\\1&1\end{array}$      |
-|        $NAND$         |   ![nand](/Users/sangeunlee/lisy/타임랩스/nand.png)   | $F=\overline{XY}$                                            | $\begin{array}{cc|c}X&Y&F\\\hline0&0&1\\0&1&1\\1&0&1\\1&1&0\end{array}$ |
-|         $NOR$         |    ![nor](/Users/sangeunlee/lisy/타임랩스/nor.png)    | $F=\overline{X+Y}$                                           | $\begin{array}{cc|c}X&Y&F\\\hline0&0&1\\0&1&0\\1&0&0\\1&1&0\end{array}$ |
-|  $XOR$ (배타적$-OR$)  |    ![xor](/Users/sangeunlee/lisy/타임랩스/xor.png)    | $F=X\overline{Y}+\overline{X}Y=X\oplus Y$                    | $\begin{array}{cc|c}X&Y&F\\\hline0&0&0\\0&1&1\\1&0&1\\1&1&0\end{array}$ |
-| $XNOR$ (배타적$-NOR$) |   ![xnor](/Users/sangeunlee/lisy/타임랩스/xnor.png)   | $F=XY+\overline{X}\overline{Y}=\overline{X}\overline{\oplus}\overline{Y}$ | $\begin{array}{cc|c}X&Y&F\\\hline0&0&1\\0&1&0\\1&0&0\\1&1&1\end{array}$ |
+|       기호이름        |                           변별기호                           | 대수식                                                       |                            진리표                            |
+| :-------------------: | :----------------------------------------------------------: | ------------------------------------------------------------ | :----------------------------------------------------------: |
+|         $AND$         | <img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 1.png" alt="File 1" style="zoom:80%;" /> | $F=XY$                                                       | $\begin{array}{cc|c}X&Y&F\\\hline0&0&0\\0&1&0\\1&0&0\\1&1&1\end{array}$ |
+|         $OR$          | <img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 2.png" alt="File 2" style="zoom:80%;" /> | $F=X+Y$                                                      | $\begin{array}{cc|c}X&Y&F\\\hline0&0&0\\0&1&1\\1&0&1\\1&1&1\end{array}$ |
+|         $NOT$         | <img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 3.png" alt="File 3" style="zoom:80%;" /> | $F=\overline{X}$                                             |      $\begin{array}{c|c}X&F\\\hline0&1\\1&0\end{array}$      |
+|         버퍼          | <img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 4.png" alt="File 4" style="zoom:80%;" /> | $F=X$                                                        |      $\begin{array}{c|c}X&F\\\hline0&0\\1&1\end{array}$      |
+|        $NAND$         | <img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 5.png" alt="File 5" style="zoom:80%;" /> | $F=\overline{XY}$                                            | $\begin{array}{cc|c}X&Y&F\\\hline0&0&1\\0&1&1\\1&0&1\\1&1&0\end{array}$ |
+|         $NOR$         | <img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 6.png" alt="File 6" style="zoom:80%;" /> | $F=\overline{X+Y}$                                           | $\begin{array}{cc|c}X&Y&F\\\hline0&0&1\\0&1&0\\1&0&0\\1&1&0\end{array}$ |
+|  $XOR$ (배타적$-OR$)  | <img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 7.png" alt="File 7" style="zoom:80%;" /> | $F=X\overline{Y}+\overline{X}Y=X\oplus Y$                    | $\begin{array}{cc|c}X&Y&F\\\hline0&0&0\\0&1&1\\1&0&1\\1&1&0\end{array}$ |
+| $XNOR$ (배타적$-NOR$) | <img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 8.png" alt="File 8" style="zoom:80%;" /> | $F=XY+\overline{X}\overline{Y}=\overline{X}\overline{\oplus}\overline{Y}$ | $\begin{array}{cc|c}X&Y&F\\\hline0&0&1\\0&1&0\\1&0&0\\1&1&1\end{array}$ |
 
 ## 2. 부울대수 (Boolean algebra)
 
@@ -354,7 +354,7 @@ $\therefore \overline{m_i}=M_i$
 
 구성된 최소항을 OR 연산으로 결합 
 
-<img src="/Users/sangeunlee/lisy/타임랩스/sum.png" alt="sum" style="zoom:90%;" /> :arrow_backward: $F=\overline{Y}+\overline{X}Y\overline{Z}+XY$
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 9.png" alt="File 9" style="zoom:60%;" /> :arrow_backward: $F=\overline{Y}+\overline{X}Y\overline{Z}+XY$
 
 #### - 합의 곱
 
@@ -362,7 +362,7 @@ $\therefore \overline{m_i}=M_i$
 
 각 논리합 항은 임의 개수의 리터럴(literal)을 가짐
 
-<img src="/Users/sangeunlee/lisy/타임랩스/product.png" alt="product" style="zoom:90%;" /> :arrow_backward: $F=X(\overline{Y}+Z)(Z+Y+\overline{Z})$
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 10.png" alt="File 10" style="zoom:60%;" /> :arrow_backward: $F=X(\overline{Y}+Z)(Z+Y+\overline{Z})$
 
 ## 4. 집적회로
 
@@ -422,15 +422,15 @@ $\therefore \overline{m_i}=M_i$
 
 ### - 2변수 카르노도표
 
-![2](/Users/sangeunlee/lisy/타임랩스/2.png) :arrow_backward: ex)​ $F(X,\;Y)=\sum m(1,\;2,\;3)=\overline{X}Y+X\overline{Y}+XY=X+Y$
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 11.png" alt="File 11" style="zoom:60%;" /> :arrow_backward: ex) $F(X,\;Y)=\sum m(1,\;2,\;3)=\overline{X}Y+X\overline{Y}+XY=X+Y$
 
 ### - 3변수 카르노도표
 
-<img src="/Users/sangeunlee/lisy/타임랩스/3.png" alt="3" style="zoom:90%;" /> :arrow_backward: ​ex) $F(X,\;Y,\;Z)=\sum m(0,\;1,\;2,\;6)=\overline{X}\overline{Y}+Y\overline{Z}$
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 12.png" alt="File 12" style="zoom:60%;" /> :arrow_backward: ex) $F(X,\;Y,\;Z)=\sum m(0,\;1,\;2,\;6)=\overline{X}\overline{Y}+Y\overline{Z}$
 
 ### - 4변수 카르노도표
 
-<img src="/Users/sangeunlee/lisy/타임랩스/4.png" alt="4" style="zoom:81%;" /> :arrow_backward: ​ex) $F(W,\;X,\;Y,\;Z)=\sum m(1,\;3,\;4,\;5,\;11,\;12,\;13)=X\overline{Y}+\overline{W}\overline{X}Z+\overline{W}YZ$
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 13.png" alt="File 13" style="zoom:70%;" /> :arrow_backward: ex) $F(W,\;X,\;Y,\;Z)=\sum m(1,\;3,\;4,\;5,\;11,\;12,\;13)=X\overline{Y}+\overline{W}\overline{X}Z+\overline{W}YZ$
 
 ### - 5변수 카르노도표
 
@@ -446,21 +446,23 @@ $\therefore \overline{m_i}=M_i$
 
 ​	   단, 무관조건은 $d(W,\;X,\;Y,\;Z)=\sum m(10,\;11,\;12,\;13,\;14,\;15)$
 
-<img src="/Users/sangeunlee/lisy/타임랩스/5.png" alt="5" style="zoom:85%;" /> :arrow_backward: 곱의 합형 $F=\overline{W}\overline{X}\overline{Y}\overline{Z}+WZ+\overline{X}\overline{Y}\overline{Z}+XY\overline{Z}$
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 14.png" alt="File 14" style="zoom:70%;" /> :arrow_backward: 곱의 합형 $F=\overline{W}\overline{X}\overline{Y}\overline{Z}+WZ+\overline{X}\overline{Y}\overline{Z}+XY\overline{Z}$
 
-<img src="/Users/sangeunlee/lisy/타임랩스/6.png" alt="6" style="zoom:85%;" /> :arrow_backward: 합의 곱형 $(\overline{X}+Y)(\overline{X}+\overline{Z}) (\overline{W}+\overline{Z})(X+\overline{Y}+Z)$
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 15.png" alt="File 15" style="zoom:70%;" /> :arrow_backward: 합의 곱형 $(\overline{X}+Y)(\overline{X}+\overline{Z}) (\overline{W}+\overline{Z})(X+\overline{Y}+Z)$
 
 ### - 기타 카르노도표
 
 **XOR 논리게이트**는 등가의 논리식으로 바꾸어 일반의 논리함수로 변환 가능
 
-<img src="/Users/sangeunlee/lisy/타임랩스/7.png" alt="7" style="zoom:72%;" /> :arrow_backward: $X \oplus Y\oplus Z=(X\overline{Y}+\overline{X}Y)\overline{Z}+(XY+\overline{X}\overline{Y})Z=X\overline{Y}Z+\overline{X}Y\overline{Z}+\overline{X}\overline{Y}Z+XYZ$
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 16.png" alt="File 16" style="zoom:70%;" /> 
 
-<img src="/Users/sangeunlee/lisy/타임랩스/8.png" alt="8" style="zoom:90%;" /> :arrow_backward: $A\oplus B\oplus C\oplus D$
+:arrow_up_small: $X \oplus Y\oplus Z=(X\overline{Y}+\overline{X}Y)\overline{Z}+(XY+\overline{X}\overline{Y})Z=X\overline{Y}Z+\overline{X}Y\overline{Z}+\overline{X}\overline{Y}Z+XYZ$
 
-<img src="/Users/sangeunlee/lisy/타임랩스/xyz.png" alt="xyz" style="zoom:90%;" />		<img src="/Users/sangeunlee/lisy/타임랩스/abcd.png" alt="abcd" style="zoom:90%;" />
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 17.png" alt="File 17" style="zoom:70%;" /> :arrow_backward: $A\oplus B\oplus C\oplus D$
 
-:arrow_up_small: $P=X\oplus Y\oplus Z$												:arrow_up_small: $P=A\oplus B\oplus C\oplus D$
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 18.png" alt="File 18" style="zoom:60%;" />		<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 19.png" alt="File 19" style="zoom:60%;" />
+
+:arrow_up_small: $P=X\oplus Y\oplus Z$					:arrow_up_small: $P=A\oplus B\oplus C\oplus D$
 
 ## 3. NAND 게이트와 NOR 게이트
 
@@ -468,31 +470,35 @@ $\therefore \overline{m_i}=M_i$
 
 논리적 곱의 보수(AND-NOT) 수행하는 기능
 
-|   NOT   | <img src="/Users/sangeunlee/lisy/타임랩스/not.png" alt="not" style="zoom:80%;" /> | $\overline{X}$                            |
-| :-----: | :----------------------------------------------------------: | ----------------------------------------- |
-| **AND** | <img src="/Users/sangeunlee/lisy/타임랩스/nand1.png" alt="8" style="zoom:80%;" /> | $\overline{\overline{XY}}=XY$             |
-| **OR**  | <img src="/Users/sangeunlee/lisy/타임랩스/nand2.png" alt="8" style="zoom:80%;" /> | $\overline{\overline{X}\overline{Y}}=X+Y$ |
+|                             NOT                              | <img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 3.png" alt="File 3" style="zoom:60%;" /> | $\overline{X}$                            |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | ----------------------------------------- |
+|                           **AND**                            | <img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 20.png" alt="File 20" style="zoom:60%;" /> | $\overline{\overline{XY}}=XY$             |
+| **OR<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 21.png" alt="File 21" style="zoom:60%;" /> |                                                              | $\overline{\overline{X}\overline{Y}}=X+Y$ |
 
-<img src="/Users/sangeunlee/lisy/타임랩스/nand3.png" alt="nand3" style="zoom:90%;" /> :arrow_backward: AND-NOT $\overline{XYZ}$		![nand4](/Users/sangeunlee/lisy/타임랩스/nand4.png) :arrow_backward: NOT-OR $\overline{X}+\overline{Y}=\overline{XY}$
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 22.png" alt="File 22" style="zoom:60%;" /> :arrow_backward: AND-NOT $\overline{XYZ}$		
+
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 23.png" alt="File 23" style="zoom:60%;" />  :arrow_backward: NOT-OR $\overline{X}+\overline{Y}=\overline{XY}$
 
 ex) $F=XYZ+WX$
 
-<img src="/Users/sangeunlee/lisy/타임랩스/nand5.png" alt="nand5" style="zoom:90%;" />	<img src="/Users/sangeunlee/lisy/타임랩스/nand6.png" alt="nand6" style="zoom:90%;" />
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 24.png" alt="File 24" style="zoom:60%;" />	<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 25.png" alt="File 25" style="zoom:60%;" />
 
 ### - NOR 게이트
 
 논리적 합의 보수(OR-NOT) 수행하는 기능
 
-|   NOT   | <img src="/Users/sangeunlee/lisy/타임랩스/not.png" alt="not" style="zoom:80%;" /> | $\overline{X}$                            |
+|   NOT   | <img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 3.png" alt="File 3" style="zoom:60%;" /> | $\overline{X}$                            |
 | :-----: | :----------------------------------------------------------: | ----------------------------------------- |
-| **OR**  | <img src="/Users/sangeunlee/lisy/타임랩스/nor1.png" alt="8" style="zoom:80%;" /> | $\overline{\overline{X}\overline{Y}}=X+Y$ |
-| **AND** | <img src="/Users/sangeunlee/lisy/타임랩스/nor2.png" alt="8" style="zoom:80%;" /> | $\overline{\overline{XY}}=XY$             |
+| **OR**  | <img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 26.png" alt="File 26" style="zoom:60%;" /> | $\overline{\overline{X}\overline{Y}}=X+Y$ |
+| **AND** | <img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 27.png" alt="File 27" style="zoom:60%;" /> | $\overline{\overline{XY}}=XY$             |
 
-<img src="/Users/sangeunlee/lisy/타임랩스/nor3.png" alt="nor3" style="zoom:90%;" /> :arrow_backward: OR-NOT $\overline{X+Y+Z}$			![nor4](/Users/sangeunlee/lisy/타임랩스/nor4.png) :arrow_backward: NOT-AND $\overline{X}\overline{Y}=\overline{X+Y}$
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 28.png" alt="File 28" style="zoom:60%;" />:arrow_backward: OR-NOT $\overline{X+Y+Z}$	
+
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 29.png" alt="File 29" style="zoom:60%;" /> :arrow_backward: NOT-AND $\overline{X}\overline{Y}=\overline{X+Y}$
 
 ex) $F=W(XY+Z)(\overline{Y}\overline{Z}+\overline{W})$
 
-<img src="/Users/sangeunlee/lisy/타임랩스/nor5.png" alt="nor5" style="zoom:90%;" />	<img src="/Users/sangeunlee/lisy/타임랩스/nor6.png" alt="nor6" style="zoom:90%;" />
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 30.png" alt="File 30" style="zoom:60%;" />	<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 31.png" alt="File 31" style="zoom:60%;" />
 
 ---
 
@@ -584,9 +590,11 @@ $C=XY$
 |    1     |    0     |    1     |    0     |
 |    1     |    1     |    0     |    1     |
 
-<img src="/Users/sangeunlee/lisy/타임랩스/반가산기1.png" alt="반가산기1" style="zoom:80%;" />	<img src="/Users/sangeunlee/lisy/타임랩스/반가산기2.png" alt="반가산기2" style="zoom:80%;" />			<img src="/Users/sangeunlee/lisy/타임랩스/반가산기3.png" alt="반가산기3" style="zoom:80%;" />
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 32.png" alt="File 32" style="zoom:60%;" /> :arrow_backward: $S=X\overline{Y}+\overline{X}Y\;\;;\;\;C=XY$		
 
-:arrow_up_small: $S=X\overline{Y}+\overline{X}Y\;\;;\;\;C=XY$				:arrow_up_small: $S=(X+Y)(\overline{X}+\overline{Y})\;\;;\;\;C=XY$	:arrow_up_small: $S=X\oplus Y\;\;;\;\;C=XY$ 
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 33.png" alt="File 33" style="zoom:60%;" />80%;" /> :arrow_backward: $S=(X+Y)(\overline{X}+\overline{Y})\;\;;\;\;C=XY$		
+
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 34.png" alt="File 34" style="zoom:60%;" /> :arrow_backward: $S=X\oplus Y\;\;;\;\;C=XY$ 
 
 #### - 전가산기 (FA)
 
@@ -611,9 +619,9 @@ $C=XY+XZ+YZ=XY+Z(X\oplus Y)$
 |    1     |    1     |       0        |    0     |    1     |
 |    1     |    1     |       1        |    1     |    1     |
 
-<img src="/Users/sangeunlee/lisy/타임랩스/전가산기1.png" alt="전가산기1" style="zoom:75%;" />		<img src="/Users/sangeunlee/lisy/타임랩스/전가산기2.png" alt="전가산기2" style="zoom:80%;" />
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 35.png" alt="File 35" style="zoom:60%;" />		<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 36.png" alt="File 36" style="zoom:60%;" />
 
-:arrow_up_small: 전가산기의 논리회로도 1								:arrow_up_small: 전가산기의 논리회로도 2 (HA 2개 + OR)
+:arrow_up_small: 전가산기의 논리회로도 1			:arrow_up_small: 전가산기의 논리회로도 2 (HA 2개 + OR)
 
 #### - 직병렬 가산기
 
@@ -654,7 +662,7 @@ $B=\overline{X}Y$
 |    1     |    0     |    1     |    0     |
 |    1     |    1     |    0     |    0     |
 
-![반감산기의논리회로도](/Users/sangeunlee/lisy/타임랩스/반감산기의논리회로도.png) :arrow_backward: 반감산기의 논리회로도
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 37.png" alt="File 37" style="zoom:60%;" /> :arrow_backward: 반감산기의 논리회로도
 
 #### - 전감산기 (FS)
 
@@ -679,7 +687,7 @@ $B=\overline{X}Y+\overline{X}Z+YZ=\overline{X}Y+(\overline{X\oplus Y})Z$
 |    1     |    1     |    0     |    0     |    0     |
 |    1     |    1     |    1     |    1     |    1     |
 
-<img src="/Users/sangeunlee/lisy/타임랩스/전감산기의 논리회로도.png" alt="전감산기의 논리회로도" style="zoom:90%;" />  :arrow_backward: 전감산기의 논리회로도 (HS 2개 + OR)
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 38.png" alt="File 38" style="zoom:60%;" />  :arrow_backward: 전감산기의 논리회로도 (HS 2개 + OR)
 
 #### - 병렬 가,감산기
 
@@ -691,7 +699,7 @@ S가 0이면, XOR는 B의 값을 그대로 통과시킴. $C_0$의 값도 0이기
 
 S가 1이면, XOR는 $B\oplus 1$로서 $\overline{B}$가 되고 $C_0$는 1이 되므로 회로는 A에 B의 2의 보수 값을 더하는 뺄셈 연산 수행
 
-<img src="/Users/sangeunlee/lisy/타임랩스/fapa.png" alt="fapa" style="zoom:70%;" />	:arrow_backward: 4비트 가,감산기
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 39.png" alt="File 39" style="zoom:60%;" /> :arrow_backward: 4비트 가,감산기
 
 #### - BCD 가산기
 
@@ -757,7 +765,7 @@ BCD코드를 3초과 코드로 바꾸는 변환기
 |     8     |  1   |  0   |  0   |  0   |  1   |  0   |  1   |  1   |
 |     9     |  1   |  0   |  0   |  1   |  1   |  1   |  0   |  0   |
 
-<img src="/Users/sangeunlee/lisy/타임랩스/BCD-3.png" alt="BCD-3" style="zoom:80%;" /> :arrow_backward: BCD-3초과 코드변환기의 논리회로도
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 40.png" alt="File 40" style="zoom:60%;" /> :arrow_backward: BCD-3초과 코드변환기의 논리회로도
 
 #### - BCD-9의 보수변환기
 
@@ -786,7 +794,7 @@ BCD코드를 3초과 코드로 바꾸는 변환기
 |   8    |  1   |  0   |  0   |  0   |    1     |  0   |  0   |  0   |  1   |
 |   9    |  1   |  0   |  0   |  1   |    0     |  0   |  0   |  0   |  0   |
 
-<img src="/Users/sangeunlee/lisy/타임랩스/BCD-9.png" alt="BCD-9" style="zoom:80%;" /> :arrow_backward: BCD-9의 보수변환기 논리회로도
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 41.png" alt="File 41" style="zoom:60%;" /> :arrow_backward: BCD-9의 보수변환기 논리회로도
 
 ### - 패리티 발생기/검사기
 
@@ -856,9 +864,9 @@ $\;\;\;\;=\overline{X}(\overline{Y\oplus Z})+X(Y\oplus Z)$
 
 $\;\;\;\;\;=\overline{X\oplus Y\oplus Z}$
 
-![parity](/Users/sangeunlee/lisy/타임랩스/parity.png)				![parity1](/Users/sangeunlee/lisy/타임랩스/parity1.png)
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 42.png" alt="File 42" style="zoom:60%;" />				<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 43.png" alt="File 43" style="zoom:60%;" />
 
-:arrow_up_small: 홀수 패리티 발생기의 도표						:arrow_up_small: 3비트 홀수 패리티 발생기의 논리회로도
+:arrow_up_small: 홀수 패리티 발생기의 도표	   	:arrow_up_small: 3비트 홀수 패리티 발생기의 논리회로도
 
 #### - 패리티 검사기
 
@@ -889,13 +897,15 @@ P가 '0'이면 에러 없음
 |  1   |  1   |  1   |  0   |          0           |
 |  1   |  1   |  1   |  1   |          1           |
 
-$P=\overline{W}\overline{X}\overline{Y}\overline{Z}+\overline{W}\overline{X}YZ+\overline{W}X\overline{Y}Z+\overline{W}XY\overline{Z}+W\overline{X}\overline{Y}Z+W\overline{X}Y\overline{Z}+WX\overline{Y}\overline{Z}+WXYZ$
+$P=\overline{W}\overline{X}\overline{Y}\overline{Z}+\overline{W}\overline{X}YZ+\overline{W}X\overline{Y}Z$
+
+$\;\;\;\;\;\;\;+\overline{W}XY\overline{Z}+W\overline{X}\overline{Y}Z+W\overline{X}Y\overline{Z}+WX\overline{Y}\overline{Z}+WXYZ$
 
 $\;\;\;\;=\overline{W\oplus X\oplus Y\oplus Z}$
 
-<img src="/Users/sangeunlee/lisy/타임랩스/parity2.png" alt="parity2" style="zoom:90%;" />				<img src="/Users/sangeunlee/lisy/타임랩스/parity3.png" alt="parity3" style="zoom:90%;" />
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 44.png" alt="File 44" style="zoom:60%;" />				<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 45.png" alt="File 45" style="zoom:60%;" />
 
-:arrow_up_small: 패리티 검사기의 카르노도표					:arrow_up_small: 4비트 홀수 패리티 검사기의 논리회로도
+:arrow_up_small: 패리티 검사기의 카르노도표	  	:arrow_up_small: 4비트 홀수 패리티 검사기의 논리회로도
 
 ## 5. MSI를 이용한 조합논리회로
 
@@ -997,7 +1007,7 @@ n개의 입력과 m개의 출력을 가진 조합논리회로를 $n\times 2^n$�
 
 ex) 입력이 4개이고 출력 1개인 $4\times 1$ 멀티플렉서의 논리회로도, 진리표, 블록도
 
-<img src="/Users/sangeunlee/lisy/타임랩스/mux1.png" alt="mux1" style="zoom:80%;" />	$\begin{array}{cc|c}S_1&S_2&Y\\\hline0&0&D_0\\0&1&D_1\\1&0&D_2\\1&1&D_3\end{array}$		<img src="/Users/sangeunlee/lisy/타임랩스/mux0.png" alt="mux0" style="zoom:60%;" />
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 46.png" alt="File 46" style="zoom:60%;" />$\begin{array}{cc|c}S_1&S_2&Y\\\hline0&0&D_0\\0&1&D_1\\1&0&D_2\\1&1&D_3\end{array}$<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 47.png" alt="File 47" style="zoom:60%;" />
 
 #### - 멀티플렉서를 이용한 부울함수 구현
 
@@ -1008,9 +1018,9 @@ ex) $F(A,B,C)=\sum m(1,2,6,7)$ 멀티플렉서를 이용한 부울함수 구현
 3. 다음 순서인 B, C를 선택선 $S_1,\; S_0$에 각각 연결하고 입력단으로 사용될 변수 A의 논리를 알기 위해 구현표 작성
 4. 구현표에 의해 멀티플렉서에 입력단 연결
 
-$\begin{array}{c|ccc|c}최소항&A&B&C&F\\\hline0&0&0&0&0\\1&0&0&1&1\\2&0&1&0&1\\3&0&1&1&0\\4&1&0&0&0\\5&1&0&1&0\\6&1&1&0&1\\7&1&1&1&1\\\end{array}$		$\begin{array}{c|cccc}&I_0&I_1&I_2&I_3\\\hline\overline{A}&0&(1)&(2)&3\\A&4&5&(6)&(7)\end{array}$		<img src="/Users/sangeunlee/lisy/타임랩스/mux.png" alt="mux" style="zoom:60%;" />
+$\begin{array}{c|ccc|c}최소항&A&B&C&F\\\hline0&0&0&0&0\\1&0&0&1&1\\2&0&1&0&1\\3&0&1&1&0\\4&1&0&0&0\\5&1&0&1&0\\6&1&1&0&1\\7&1&1&1&1\\\end{array}$	$\begin{array}{c|cccc}&I_0&I_1&I_2&I_3\\\hline\overline{A}&0&(1)&(2)&3\\A&4&5&(6)&(7)\end{array}$	<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 48.png" alt="File 48" style="zoom:60%;" />
 
-:arrow_up_small: 진리표						   		:arrow_up_small: 구현표								:arrow_up_small: 멀티플렉서에 의한 구현
+:arrow_up_small: 진리표						  		:arrow_up_small: 구현표							:arrow_up_small: 멀티플렉서에 의한 구현
 
 1. 열에 속하는 두 최소항이 둘 다 원으로 둘러싸여 있지 않다면 그 열에 대등되는 MUX 입력은 0
 2. 두 최소항이 둘 다 원으로 둘러싸여 있다면 MUX 입력은 1
@@ -1029,7 +1039,7 @@ $\begin{array}{c|ccc|c}최소항&A&B&C&F\\\hline0&0&0&0&0\\1&0&0&1&1\\2&0&1&0&1\
 
 ex) $1 \times 4$ 디멀티플렉서의 논리도와 블록도
 
-<img src="/Users/sangeunlee/lisy/타임랩스/demux0.png" alt="demux0" style="zoom:90%;" />		<img src="/Users/sangeunlee/lisy/타임랩스/demux1.png" alt="demux1" style="zoom:60%;" />
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 49.png" alt="File 49" style="zoom:60%;" />		<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 50.png" alt="File 50" style="zoom:60%;" />
 
 ---
 
@@ -1075,7 +1085,7 @@ Q가 0이고, $\overline{Q}$가 1인 **리셋 상태**
 
 두 입력 S와 R이 모두 1일 때에는 출력값 Q, $\overline{Q}$가 모두 0이 되는 **미정상태(undefined state)**를 가짐
 
-<img src="/Users/sangeunlee/lisy/타임랩스/srlatch.png" alt="srlatch" style="zoom:85%;" />		$\begin{array}{cc|c}S&R&Q(t+1)\\\hline0&0&Q(t)(무변화상태)\\0&1&0(리셋상태)\\1&0&1(세트상태)\\1&1&미정상태\end{array}$
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 51.png" alt="File 51" style="zoom:60%;" />		$\begin{array}{cc|c}S&R&Q(t+1)\\\hline0&0&Q(t)(무변화상태)\\0&1&0(리셋상태)\\1&0&1(세트상태)\\1&1&미정상태\end{array}$
 
 #### - NAND 게이트로 된 SR 래치
 
@@ -1083,7 +1093,7 @@ NOR 게이트로 된 SR 래치와 그 수행기능 동일
 
 단지 입력에 따른 출력값을 나타내는 동작상태가 **정반대로 나타남**
 
-<img src="/Users/sangeunlee/lisy/타임랩스/srlatch1.png" alt="srlatch1" style="zoom:85%;" />		$\begin{array}{cc|c}S&R&Q(t+1)\\\hline0&0&미정상태\\0&1&1(세트상태)\\1&0&0(리셋상태)\\1&1&Q(t)(무변화상태)\end{array}$
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 52.png" alt="File 52" style="zoom:60%;" />		$\begin{array}{cc|c}S&R&Q(t+1)\\\hline0&0&미정상태\\0&1&1(세트상태)\\1&0&0(리셋상태)\\1&1&Q(t)(무변화상태)\end{array}$
 
 #### - 제어입력을 가진 SR 래치(RS 플립플롭)
 
@@ -1097,7 +1107,7 @@ NOR 게이트로 된 SR 래치와 그 수행기능 동일
 
 C이 0인 경우, 출력에는 아무런 영향 미치지 않음
 
-<img src="/Users/sangeunlee/lisy/타임랩스/nandsr.png" alt="nandsr" style="zoom:90%;" /><img src="/Users/sangeunlee/lisy/타임랩스/norsr.png" alt="norsr" style="zoom:90%;" />![srlatch0](/Users/sangeunlee/lisy/타임랩스/srlatch0.png)
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 53.png" alt="File 53" style="zoom:60%;" /><img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 54.png" alt="File 54" style="zoom:50%;" />
 
 ### - D 플립플롭
 
@@ -1105,7 +1115,7 @@ RS 플립플롭에서의 문제점인 미정상태를 제거하는 방법
 
 S와 R이 동시에 1을 갖지 않도록 함
 
-<img src="/Users/sangeunlee/lisy/타임랩스/dflip.png" alt="dflip" style="zoom:80%;" />	$\begin{array}{cc|c}C&D&Q의 다음 상태\\\hline0&\times&무변화상태\\1&0&0(리셋상태)\\1&1&1(세트상태)\end{array}$		<img src="/Users/sangeunlee/lisy/타임랩스/dflip1.png" alt="dflip1" style="zoom:80%;" />
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 55.png" alt="File 55" style="zoom:60%;" />	$\begin{array}{cc|c}C&D&Q의 다음 상태\\\hline0&\times&무변화상태\\1&0&0(리셋상태)\\1&1&1(세트상태)\end{array}$	<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 56.png" alt="File 56" style="zoom:60%;" />
 
 ### - JK 플립플롭
 
@@ -1113,7 +1123,7 @@ S와 R이 동시에 1을 갖지 않도록 함
 
 입력 J와 K가 모두 1일 때, 출력이 보수가 취해진 다음에도 클럭 펄스가 남아 있으면 또다시 보수를 취하는 반복적인 출력변화를 나타내는 **레이스 현상** 나타남
 
-<img src="/Users/sangeunlee/lisy/타임랩스/jkflip1.png" alt="jkflip1" style="zoom:80%;" />	$\begin{array}{ccc|c}C&J&K&Q의 다음 상태\\\hline0&\times&\times&무변화상태\\1&0&0&무변화상태\\1&0&1&리셋상태\\1&1&0&세트상태\\1&1&1&보수(\overline{Q})\end{array}$	<img src="/Users/sangeunlee/lisy/타임랩스/jkflip.png" alt="jkflip" style="zoom:80%;" />
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 57.png" alt="File 57" style="zoom:60%;" />	$\begin{array}{ccc|c}C&J&K&Q의 다음 상태\\\hline0&\times&\times&무변화상태\\1&0&0&무변화상태\\1&0&1&리셋상태\\1&1&0&세트상태\\1&1&1&보수(\overline{Q})\end{array}$	<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 58.png" alt="File 58" style="zoom:60%;" />
 
 ### - T 플립플롭
 
@@ -1121,7 +1131,7 @@ JK 플립플롭의 변화된 형태
 
 JK 플립플롭의 두 입력을 하나로 묶어서 만듬
 
-<img src="/Users/sangeunlee/lisy/타임랩스/tflip1.png" alt="tflip1" style="zoom:80%;" />		$\begin{array}{c|c}T&Q의 다음 상태\\\hline0&무변화상태\\1&반전(\overline{Q})\end{array}$		<img src="/Users/sangeunlee/lisy/타임랩스/tflip.png" alt="tflip" style="zoom:90%;" />	
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 59.png" alt="File 59" style="zoom:60%;" />		$\begin{array}{c|c}T&Q의 다음 상태\\\hline0&무변화상태\\1&반전(\overline{Q})\end{array}$		<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 60.png" alt="File 60" style="zoom:60%;" />
 
 ## 3. 플립플롭의 트리거링
 
@@ -1139,7 +1149,7 @@ JK 플립플롭의 두 입력을 하나로 묶어서 만듬
 
 클럭 펄스의 에지, 즉 상승 에지나 하강 에지 동안에 입력이 출력에 영향을 미침
 
-<img src="/Users/sangeunlee/lisy/타임랩스/flipflop.png" alt="flipflop" style="zoom:80%;" /><img src="/Users/sangeunlee/lisy/타임랩스/flipflop1.png" alt="flipflop1" style="zoom:90%;" />
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 61.png" alt="File 61" style="zoom:60%;" />
 
 ### - 마스터-슬레이브 플립플롭
 
@@ -1147,7 +1157,7 @@ JK 플립플롭의 두 입력을 하나로 묶어서 만듬
 
 클럭 펄스의 상승 에지에서 첫 번째 플립플롭을 세트, 클럭 펄스의 하강 에지에서 두 번째 플립플롭에 신호 전달하도록 구성
 
-![masterslave](/Users/sangeunlee/lisy/타임랩스/masterslave.png)
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 62.png" alt="File 62" style="zoom:60%;" />
 
 ## 4. 순서논리회로의 분석
 
@@ -1161,7 +1171,7 @@ JK 플립플롭의 두 입력을 하나로 묶어서 만듬
 
 ex) D 플립플롭을 가진 순서논리회로의 분석
 
-<img src="/Users/sangeunlee/lisy/타임랩스/last.png" alt="last" style="zoom:70%;" />
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 63.png" alt="File 63" style="zoom:60%;" />
 
 ### - 입력방정식의 유도
 
@@ -1214,7 +1224,7 @@ $\begin{array}{cc|c}S&R&Q(t+1)\\\hline0&0&Q(t)\\0&1&0\\1&0&1\\1&1&미정\end{arr
 
 ### - 상태도 (state diagram)
 
-<img src="/Users/sangeunlee/lisy/타임랩스/statediagram.png" alt="statediagram" style="zoom:70%;" />	상태표로 주어진 정보를 도식적으로 나타내는 것
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 64.png" alt="File 64" style="zoom:60%;" />	상태표로 주어진 정보를 도식적으로 나타내는 것
 
 상태는 하나의 원으로 표시, 그 상태 간의 변화는 원을 연결하는 선으로 표시
 
@@ -1251,9 +1261,11 @@ $\begin{array}{cc|c}S&R&Q(t+1)\\\hline0&0&Q(t)\\0&1&0\\1&0&1\\1&1&미정\end{arr
 
 ### - 플립플롭의 여기표
 
-$\begin{array}{cc|cc}Q(t)&Q(t+1)&S&R\\\hline0&0&0&\times\\0&1&1&0\\1&0&0&1\\1&1&\times&0\end{array}$	$\begin{array}{cc|cc}Q(t)&Q(t+1)&J&K\\\hline0&0&0&\times\\0&1&1&\times\\1&0&\times&1\\1&1&\times&0\end{array}$	$\begin{array}{cc|c}Q(t)&Q(t+1)&D\\\hline0&0&0\\0&1&1\\1&0&0\\1&1&1\end{array}$	$\begin{array}{cc|cc}Q(t)&Q(t+1)&T\\\hline0&0&0\\0&1&1\\1&0&1\\1&1&0\end{array}$
+$\begin{array}{cc|cc}Q(t)&Q(t+1)&S&R\\\hline0&0&0&\times\\0&1&1&0\\1&0&0&1\\1&1&\times&0\end{array}$	$\begin{array}{cc|cc}Q(t)&Q(t+1)&J&K\\\hline0&0&0&\times\\0&1&1&\times\\1&0&\times&1\\1&1&\times&0\end{array}$	
 
-:arrow_up_small: RS 플립플롭							:arrow_up_small: JK 플립플롭							:arrow_up_small: D 플립플롭						:arrow_up_small: T 플립플롭
+$\begin{array}{cc|c}Q(t)&Q(t+1)&D\\\hline0&0&0\\0&1&1\\1&0&0\\1&1&1\end{array}$			$\begin{array}{cc|cc}Q(t)&Q(t+1)&T\\\hline0&0&0\\0&1&1\\1&0&1\\1&1&0\end{array}$
+
+:arrow_up_small: RS 플립플롭, JK 플립플롭, D 플립플롭, T 플립플롭
 
 JK 플립플롭의 경우 무관조건의 표현이 가장 많이 나타남
 
@@ -1608,7 +1620,7 @@ $F_0(X,Y,Z)=\sum m(0,1,3,5,6)\;\;\;\;F_1(X,Y,Z)=\sum m(1,3,6)$
 
 $F_2(X,Y,Z)=\sum m(0,2,4,6)\;\;\;\;F_3(X,Y,Z)=\sum m(3,4,5,7)$
 
-<img src="/Users/sangeunlee/lisy/타임랩스/rom.png" alt="rom" style="zoom:60%;" />
+<img src="/Users/sangeunlee/lisy/com/CS_Bachelors_Degree_Examination_for_Self-Education/2/picture/File 65.png" alt="File 65" style="zoom:60%;" />
 
 ## 4. PLD
 
