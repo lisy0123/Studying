@@ -446,9 +446,9 @@ $\therefore \overline{m_i}=M_i$
 
 ​	   단, 무관조건은 $d(W,\;X,\;Y,\;Z)=\sum m(10,\;11,\;12,\;13,\;14,\;15)$
 
-<img src="/Users/sangeunlee/lisy/타임랩스/5.png" alt="5" style="zoom:90%;" /> :arrow_backward: 곱의 합형 $F=\overline{W}\overline{X}\overline{Y}\overline{Z}+WZ+\overline{X}\overline{Y}\overline{Z}+XY\overline{Z}$
+<img src="/Users/sangeunlee/lisy/타임랩스/5.png" alt="5" style="zoom:85%;" /> :arrow_backward: 곱의 합형 $F=\overline{W}\overline{X}\overline{Y}\overline{Z}+WZ+\overline{X}\overline{Y}\overline{Z}+XY\overline{Z}$
 
-<img src="/Users/sangeunlee/lisy/타임랩스/6.png" alt="6" style="zoom:90%;" /> :arrow_backward: 합의 곱형 $(\overline{X}+Y)(\overline{X}+\overline{Z}) (\overline{W}+\overline{Z})(X+\overline{Y}+Z)$
+<img src="/Users/sangeunlee/lisy/타임랩스/6.png" alt="6" style="zoom:85%;" /> :arrow_backward: 합의 곱형 $(\overline{X}+Y)(\overline{X}+\overline{Z}) (\overline{W}+\overline{Z})(X+\overline{Y}+Z)$
 
 ### - 기타 카르노도표
 
@@ -468,10 +468,10 @@ $\therefore \overline{m_i}=M_i$
 
 논리적 곱의 보수(AND-NOT) 수행하는 기능
 
-|   NOT   | <img src="/Users/sangeunlee/lisy/타임랩스/not.png" alt="not" style="zoom:90%;" /> | $\overline{X}$                            |
+|   NOT   | <img src="/Users/sangeunlee/lisy/타임랩스/not.png" alt="not" style="zoom:80%;" /> | $\overline{X}$                            |
 | :-----: | :----------------------------------------------------------: | ----------------------------------------- |
-| **AND** | <img src="/Users/sangeunlee/lisy/타임랩스/nand1.png" alt="8" style="zoom:90%;" /> | $\overline{\overline{XY}}=XY$             |
-| **OR**  | <img src="/Users/sangeunlee/lisy/타임랩스/nand2.png" alt="8" style="zoom:90%;" /> | $\overline{\overline{X}\overline{Y}}=X+Y$ |
+| **AND** | <img src="/Users/sangeunlee/lisy/타임랩스/nand1.png" alt="8" style="zoom:80%;" /> | $\overline{\overline{XY}}=XY$             |
+| **OR**  | <img src="/Users/sangeunlee/lisy/타임랩스/nand2.png" alt="8" style="zoom:80%;" /> | $\overline{\overline{X}\overline{Y}}=X+Y$ |
 
 <img src="/Users/sangeunlee/lisy/타임랩스/nand3.png" alt="nand3" style="zoom:90%;" /> :arrow_backward: AND-NOT $\overline{XYZ}$		![nand4](/Users/sangeunlee/lisy/타임랩스/nand4.png) :arrow_backward: NOT-OR $\overline{X}+\overline{Y}=\overline{XY}$
 
@@ -483,10 +483,10 @@ ex) $F=XYZ+WX$
 
 논리적 합의 보수(OR-NOT) 수행하는 기능
 
-|   NOT   | <img src="/Users/sangeunlee/lisy/타임랩스/not.png" alt="not" style="zoom:90%;" /> | $\overline{X}$                            |
+|   NOT   | <img src="/Users/sangeunlee/lisy/타임랩스/not.png" alt="not" style="zoom:80%;" /> | $\overline{X}$                            |
 | :-----: | :----------------------------------------------------------: | ----------------------------------------- |
-| **OR**  | <img src="/Users/sangeunlee/lisy/타임랩스/nor1.png" alt="8" style="zoom:90%;" /> | $\overline{\overline{X}\overline{Y}}=X+Y$ |
-| **AND** | <img src="/Users/sangeunlee/lisy/타임랩스/nor2.png" alt="8" style="zoom:90%;" /> | $\overline{\overline{XY}}=XY$             |
+| **OR**  | <img src="/Users/sangeunlee/lisy/타임랩스/nor1.png" alt="8" style="zoom:80%;" /> | $\overline{\overline{X}\overline{Y}}=X+Y$ |
+| **AND** | <img src="/Users/sangeunlee/lisy/타임랩스/nor2.png" alt="8" style="zoom:80%;" /> | $\overline{\overline{XY}}=XY$             |
 
 <img src="/Users/sangeunlee/lisy/타임랩스/nor3.png" alt="nor3" style="zoom:90%;" /> :arrow_backward: OR-NOT $\overline{X+Y+Z}$			![nor4](/Users/sangeunlee/lisy/타임랩스/nor4.png) :arrow_backward: NOT-AND $\overline{X}\overline{Y}=\overline{X+Y}$
 
@@ -611,7 +611,7 @@ $C=XY+XZ+YZ=XY+Z(X\oplus Y)$
 |    1     |    1     |       0        |    0     |    1     |
 |    1     |    1     |       1        |    1     |    1     |
 
-<img src="/Users/sangeunlee/lisy/타임랩스/전가산기1.png" alt="전가산기1" style="zoom:80%;" />		<img src="/Users/sangeunlee/lisy/타임랩스/전가산기2.png" alt="전가산기2" style="zoom:80%;" />
+<img src="/Users/sangeunlee/lisy/타임랩스/전가산기1.png" alt="전가산기1" style="zoom:75%;" />		<img src="/Users/sangeunlee/lisy/타임랩스/전가산기2.png" alt="전가산기2" style="zoom:80%;" />
 
 :arrow_up_small: 전가산기의 논리회로도 1								:arrow_up_small: 전가산기의 논리회로도 2 (HA 2개 + OR)
 
@@ -1105,7 +1105,7 @@ RS 플립플롭에서의 문제점인 미정상태를 제거하는 방법
 
 S와 R이 동시에 1을 갖지 않도록 함
 
-<img src="/Users/sangeunlee/lisy/타임랩스/dflip.png" alt="dflip" style="zoom:85%;" />	$\begin{array}{cc|c}C&D&Q의 다음 상태\\\hline0&\times&무변화상태\\1&0&0(리셋상태)\\1&1&1(세트상태)\end{array}$		<img src="/Users/sangeunlee/lisy/타임랩스/dflip1.png" alt="dflip1" style="zoom:80%;" />
+<img src="/Users/sangeunlee/lisy/타임랩스/dflip.png" alt="dflip" style="zoom:80%;" />	$\begin{array}{cc|c}C&D&Q의 다음 상태\\\hline0&\times&무변화상태\\1&0&0(리셋상태)\\1&1&1(세트상태)\end{array}$		<img src="/Users/sangeunlee/lisy/타임랩스/dflip1.png" alt="dflip1" style="zoom:80%;" />
 
 ### - JK 플립플롭
 
@@ -1113,7 +1113,7 @@ S와 R이 동시에 1을 갖지 않도록 함
 
 입력 J와 K가 모두 1일 때, 출력이 보수가 취해진 다음에도 클럭 펄스가 남아 있으면 또다시 보수를 취하는 반복적인 출력변화를 나타내는 **레이스 현상** 나타남
 
-<img src="/Users/sangeunlee/lisy/타임랩스/jkflip1.png" alt="jkflip1" style="zoom:85%;" />	$\begin{array}{ccc|c}C&J&K&Q의 다음 상태\\\hline0&\times&\times&무변화상태\\1&0&0&무변화상태\\1&0&1&리셋상태\\1&1&0&세트상태\\1&1&1&보수(\overline{Q})\end{array}$	<img src="/Users/sangeunlee/lisy/타임랩스/jkflip.png" alt="jkflip" style="zoom:80%;" />
+<img src="/Users/sangeunlee/lisy/타임랩스/jkflip1.png" alt="jkflip1" style="zoom:80%;" />	$\begin{array}{ccc|c}C&J&K&Q의 다음 상태\\\hline0&\times&\times&무변화상태\\1&0&0&무변화상태\\1&0&1&리셋상태\\1&1&0&세트상태\\1&1&1&보수(\overline{Q})\end{array}$	<img src="/Users/sangeunlee/lisy/타임랩스/jkflip.png" alt="jkflip" style="zoom:80%;" />
 
 ### - T 플립플롭
 
@@ -1121,7 +1121,7 @@ JK 플립플롭의 변화된 형태
 
 JK 플립플롭의 두 입력을 하나로 묶어서 만듬
 
-<img src="/Users/sangeunlee/lisy/타임랩스/tflip1.png" alt="tflip1" style="zoom:85%;" />		$\begin{array}{c|c}T&Q의 다음 상태\\\hline0&무변화상태\\1&반전(\overline{Q})\end{array}$		<img src="/Users/sangeunlee/lisy/타임랩스/tflip.png" alt="tflip" style="zoom:90%;" />	
+<img src="/Users/sangeunlee/lisy/타임랩스/tflip1.png" alt="tflip1" style="zoom:80%;" />		$\begin{array}{c|c}T&Q의 다음 상태\\\hline0&무변화상태\\1&반전(\overline{Q})\end{array}$		<img src="/Users/sangeunlee/lisy/타임랩스/tflip.png" alt="tflip" style="zoom:90%;" />	
 
 ## 3. 플립플롭의 트리거링
 
@@ -1214,13 +1214,52 @@ $\begin{array}{cc|c}S&R&Q(t+1)\\\hline0&0&Q(t)\\0&1&0\\1&0&1\\1&1&미정\end{arr
 
 ### - 상태도 (state diagram)
 
-상태표로 주어진 정보를 도식적으로 나타내는 것
+<img src="/Users/sangeunlee/lisy/타임랩스/statediagram.png" alt="statediagram" style="zoom:70%;" />	상태표로 주어진 정보를 도식적으로 나타내는 것
 
+상태는 하나의 원으로 표시, 그 상태 간의 변화는 원을 연결하는 선으로 표시
 
+원을 연결하는 화살표는 현재상태에서 다음 상태로의 변화를 표현함
 
+원 안의 2진수는 플립플롭의 상태
 
+원들을 연결하는 선에 표현된 2진수는 입력과 출력을 나타냄
 
 ## 5. 순서논리회로의 설계
+
+1. 주어진 문제 설명이나 상태도로부터 상태표 작성
+2. 플립플롭의 종류와 개수 결정, 각 플립플롭에 기호 할당
+3. 상태표의 다음 상태로부터 플립플롭의 입력방정식을 구함
+4. 상태표에 출력이 있으며 출력방정식을 구함
+5. 구해진 입력방정식과 출력방정식을 간소화
+6. 간소화된 입출력방정식을 이용하여 논리도 작성
+
+### - 플립플롭의 결정
+
+일반적으로 데이터 전송을 위한 설계에는 D 플립플롭을, 보수를 포함한 응용에는 T 플립플롭이 사용되지만 일반적으로 JK 플립플롭을 많이 사용
+
+### - 입력방정식의 유도
+
+#### - 입력방정식
+
+플립플롭의 입장에서 보면 조합논리회로의 출력값은 입력방정식이 되고 외부입력과 플립플롭의 현재 상태에 의해 결정됨
+
+입력방정식을 구하려면 현재 상태에서 다음 상태로의 변화를 야기하는 입력조건을 구하면 됨
+
+- **여기표**
+
+  현재 상태에서 다음 상태로의 변화를 일으키는 입력조건의 리스트
+
+### - 플립플롭의 여기표
+
+$\begin{array}{cc|cc}Q(t)&Q(t+1)&S&R\\\hline0&0&0&\times\\0&1&1&0\\1&0&0&1\\1&1&\times&0\end{array}$	$\begin{array}{cc|cc}Q(t)&Q(t+1)&J&K\\\hline0&0&0&\times\\0&1&1&\times\\1&0&\times&1\\1&1&\times&0\end{array}$	$\begin{array}{cc|c}Q(t)&Q(t+1)&D\\\hline0&0&0\\0&1&1\\1&0&0\\1&1&1\end{array}$	$\begin{array}{cc|cc}Q(t)&Q(t+1)&T\\\hline0&0&0\\0&1&1\\1&0&1\\1&1&0\end{array}$
+
+:arrow_up_small: RS 플립플롭							:arrow_up_small: JK 플립플롭							:arrow_up_small: D 플립플롭						:arrow_up_small: T 플립플롭
+
+JK 플립플롭의 경우 무관조건의 표현이 가장 많이 나타남
+
+따라서 회로설계 시 입력함수를 카르노도표를 이용하여 간소화할 때 더욱 간단한 형태로 조합회로를 만들 수 있음
+
+순서회로의 설계 시 JK 플립플롭을 사용하는 것이 효과적임
 
 ---
 
@@ -1228,7 +1267,184 @@ $\begin{array}{cc|c}S&R&Q(t+1)\\\hline0&0&Q(t)\\0&1&0\\1&0&1\\1&1&미정\end{arr
 
 ## 1. 레지스터
 
+### - 개요
+
+- **레지스터**
+
+  데이터를 일시 저장하거나 전송하는 장치
+
+- **레지스터의 구성**
+
+  여러 개의 플립플롭을 연결하여 구성
+
+  1개의 플립플롭은 1비트의 2진 정보를 저장하므로 n비트 레지스터는 n개의 플립플롭으로 구성되며 n비트의 2진 정보를 저장
+
+- **레지스터의 기능**
+
+  여러 비트를 일시적으로 저장하거나 배열된 비트를 좌우로 자리이도(shift)을 시키는 데 사용
+
+- **레지스터의 종류**
+
+  - **데이터의 입출력방식에 따라** 
+
+    직렬입력-직렬출력 레지스터
+
+    직렬입력-병렬출력 레지스터
+
+    병렬입력-직렬출력 레지스터
+
+    병렬입력-병렬출력 레지스터
+
+  - **데이터의 자리이동 방식에 따라**
+
+    좌측 시프트(left shift) 레지스터
+
+    우측 시프트(right shift) 레지스터
+
+    양방향 시프트(bidirectional shift) 레지스터
+
+### - 데이터 적재 레지스터
+
+- **적재(load)**
+
+  레지스터에 새로운 데이터 기억시키는 과정
+
+- **데이터 적재 레지스터**
+
+  입력된 데이터를 그대로 기억하는 역할을 수행하는 레지스터
+
+일반적으로 D 플립플롭을 사용하여 구성
+
+#### - 직렬적재 레지스터
+
+데이터를 순차적으로 받아들이는 방식
+
+1비트씩 입력
+
+#### - 병렬적재 레지스터
+
+4개의 플립플롭의 입력단에 연결된 4개의 비트를 하나의 공통 연결된 클럭 펄스에 의해 동시에 레지스터로 적재
+
+### - 시프트 레지스터 (shift register)
+
+레지스터가 기억하고 있는 정보를 한 방향, 혹은 양방향으로 이동시킬 수 있는 레지스터
+
+플립플롭을 직렬로 연결한 것
+
+한 플립플롭의 출력을 다음 플립플롭의 입력에 연결한 것
+
+레지스터 A에서 레지스터 B로의 **정보 직렬전송도 가능**
+
+### - 병렬적재 양방향 시프트 레지스터
+
+왼쪽과 오른쪽의 양쪽 방향으로의 시프트와 병렬적재가 가능한 레지스터
+
+D 플립플롭과 멀티플렉서로 구성
+
 ## 2. 카운터
+
+### - 개요
+
+입력 펄스의 적용에 따라 미리 정해진 순서를 밟아 가는 순서논리회로
+
+- 카운터의 분류
+
+```mermaid
+graph LR
+%% Set edges to be curved (try monotoneX for a nice alternative)
+%% linkStyle default interpolate basis
+카운터---ㅁ[클럭 펄스 인가방식]---e[비동기식 카운터_asynchronous counter]
+ㅁ---ㅛ[동기식 카운터_synchronous counter]
+ㅁ---i[결합 카운터_ㅊcobinational counter]
+카운터---ㄱ[계수방식]---ㄷ[2n진 카운터_binary counter]
+ㄱ---ㅈ[N진 카운터_modules counter]
+ㄱ---w[시프터 카운터]---ㅂ[링 카운터_ring counter]
+w---b[존슨 카운터_Johnson counter]
+```
+
+### - 비동기식 카운터
+
+리플 카운터(ripple counter)라고도 함
+
+카운터를 구성하고 있는 각 플립플롭에 동시에 클럭이 가해지지 않는 카운터로 입력 클럭 펄스가 앞 단의 출력값에 의해서 영향을 받음
+
+#### - 2진 리플 카운터
+
+비동기식 2진 카운터
+
+카운터를 구성하는 플립플롭이 동시에 상태가 변화하지 않음
+
+클럭 입력이 플립플롭의 첫 번째 단, 즉 가장 낮은 자리의 비트를 저장하는 플립플롭에만 연결
+
+두 번쨰 플립플롭부터는 앞의 플립플롭 출력에 의해 트리거됨
+
+4비트 2진 리플 카운터의 계수순서를 보면 0에서 시작하여 계수 클럭 펄스마다 1씩 증가하고 15를 계수한 다음 0으로 되어 다시 같은 순서 반복
+
+- **업 카운터(up counter)**
+
+  계수를 상향계수하는 카운터
+
+- **다운 카운터(down counter)**
+
+  하향계수하는 카운터
+
+#### - BCD 리플 카운터
+
+0부터 9까지 10개의 상태를 계수하는 카운터
+
+각 상태는 10진수를 나타내는 2진 코드로 표현하므로 적어도 4비트 필요
+
+### - 동기식 카운터
+
+카운터를 구성하고 있는 모든 플립플롭에 동시에 클럭 펄스가 가해지고, 모든 플립플롭이 한꺼번에 동작함
+
+동작속도의 향상
+
+#### - 2진 카운터
+
+동기식 2진 카운터
+
+가장 낮은 위치의 플립플롭은 클럭 펄스가 입력될 때마다 보수를 취함
+
+=> 계수 구동입력 E가 1값을 가짐
+
+다음 플립플롭은 앞쪽의 낮은 위치의 모든 플립플롭이 1을 취할 때 보수를 취함
+
+#### - 모듈로 - N 카운터
+
+원하는 수만큼의 상태순서만을 계수하도록 설계된 카운터
+
+N개의 계수(0, 1, 2, ..., N-1)의 순서를 반복하여 계수
+
+간단히 **모드-N 카운터(modulo-N counter)**라고 함
+
+### - 시프트 카운터
+
+#### - 링 카운터
+
+시프트 레지스터를 응용한 가장 간단한 카운터
+
+출력 비트 중 1비트만 1이 되고 입력 펄스에 의해 한쪽 방향으로 1의 위치가 순환됨
+
+시프트 레지스터의 최종 출력을 다시 입력에 피드백시키는 구조를 갖는 일종의 **순환 시프트 레지스터**
+
+#### - 존슨 카운터
+
+시프트 레지스터에 피드백을 이용한 구조
+
+일명 **트위스트 링 카운터(twist ring counter)**
+
+시프트 레지스터의 최종단 플립플롭의 출력 Q가 아닌 $\overline{Q}$에서 입력 쪽으로 피드백시키는 것이 링 카운터와 다른 점
+
+### - 카운터의 설계
+
+논서논리회로의 설계과정을 그대로 따르면 됨
+
+먼저 상태도나 주어진 명세에 의해 상태표를 작성하면 됨
+
+카운터의 상태도는 클럭 펄스가 유일한 입력으로 동작, 출력이 플립플롭의 현재 상태에 의해 표현
+
+=> 순서논리회로의 상태도와는 달리 입력과 출력값이 명시되지 않음
 
 ## 3. 메모리셀
 
@@ -1260,25 +1476,185 @@ $\begin{array}{cc|c}S&R&Q(t+1)\\\hline0&0&Q(t)\\0&1&0\\1&0&1\\1&1&미정\end{arr
 
 ### - 기억장치의 종류
 
-1. 반도체 메모리를 사용한 기억장치
+1. **반도체 메모리를 사용한 기억장치**
 
-2. RAM(Random Access Memory)
+2. **RAM(Random Access Memory)**
 
    임의접근이 가능한 기억장치
 
-3. ROM(Random Only Memory)
+3. **ROM(Random Only Memory)**
 
    읽기만을 허용하는 기억장치
 
-4. PLD(Programmable Logic Device)
+4. **PLD(Programmable Logic Device)**
 
    읽기만을 허용하는 기억장치로 프로그램이 가능한 논리장치
 
-   
+5. **PLA(Programmable Logic Array)**
+
+   프로그램이 가능한 논리배열
+
+6. **PAL(Programmable Array Logic)**
+
+   프로그램이 가능한 배열논리
 
 ## 2. RAM
 
+### - 종류
+
+정적인 **SRAM(Static RAM)**과 동적인 **DRAM(Dynamic RAM)**으로 구분
+
+- **SRAM**
+
+  플립플롭으로 구성되어 액세스 타임이 고속
+
+  주로 캐시 메모리(cache memory)로 사용
+
+- **DRAM**
+
+  커패시터에 충전되는 전하의 형태로 정보를 저장하는 RAM
+
+  충전된 전하는 시간에 따라 방전하려는 경향이 있음
+
+  => RAM 내용을 소멸시킬 수 있음
+
+  => 컴퓨터의 주기억장치에 주로 사용됨
+
+### - 구성
+
+기본단위인 기억소자는 1비트를 저장할 수 있는 플립플롭 회로로 되어 있음
+
+RAM의 내부구성은 크게 **기억부, 해독부, 제어부**의 세 부분으로 구분
+
+- **기억부**
+
+  여러 개의 기억소자로 이루어진 부분
+
+  2차원의 테이블 혹은 행렬형태로 이루어져 있음
+
+  디코더에 의해 기억소자가 선택
+
+- **해독부**
+
+  디코더로 구성
+
+  2개의 주소입력는 $2\times 4$ 디코더에 의해 4개의 단어 중 하나를 선택하게 됨
+
+  디코더는 선택입력에 이해 구동
+
+  선택입력이 0, 모든 디코더의 출력은 0이 되어 단어를 선택하지 않음
+
+  선택입력이 1, 주소선의 입력값에 따라 4개의 단어 중 해당 단어 선택
+
+- **제어부**
+
+  읽기/쓰기 단자의 입력신호에 따라 데이터 입력과 출력 제어
+
+  해독부에 의해 선택된 기억소자는 제어부의 읽기/쓰기 신호에 따라 정보를 읽을 것인지, 써넣을 것인지 결정
+
+### - 확장
+
 ## 3. ROM
+
+### - 종류
+
+1. **마스크 ROM**
+
+   사용자의 요구에 따라 제조 시에 데이터를 기록해, 한번 저장한 것은 그 내용을 바꿀 수 없음
+
+   => 융통성 없음, 대량생산 적합
+
+2. **PROM(Programmable ROM)**
+
+   사용자가 데이터를 기록하는 것이 가능한 ROM
+
+   PROM writer를 이용해 프로그램 기록
+
+3. **EPROM(Erasable PROM)**
+
+   한 번 쓴 내용을 지울 수 있는 PROM
+
+4. **EEPROM(Electrically Erasable PROM)**
+
+   기억시킨 내용을 전기적으로 기울 수 있는 PROM
+
+### - 구조
+
+n개의 입력선과 n개의 출력선으로 구성
+
+입력선은 기억장치의 주소(address)
+
+출력선은 주소에 의해 선택된 단어의 데이터를 출력
+
+### - ROM을 이용한 조합논리회로 구현
+
+ROM은 디코더와 OR 겡이트로 이루어진 논리회로
+
+디코더는 n개의 입력변수를 가지고 $2^n$개의 최소항을 만들어 내는 조합논리회로
+
+디코더에 OR 게이트를 연결하면 부울함수의 **최소항의 합**을 만들어 낼 수 있으므로, ROM을 이용해 조합논리회로 구현 가능
+
+- **ROM을 하드웨어적으로 프로그램하는 방법**
+
+  주어진 진리표에 따라 전자 퓨즈선을 유지/절단시키는 것
+
+  전자 퓨즈선의 유지는 진리표상의 1을 의미
+
+  절단은 0을 의미
+
+ex) 
+
+$F_0(X,Y,Z)=\sum m(0,1,3,5,6)\;\;\;\;F_1(X,Y,Z)=\sum m(1,3,6)$
+
+$F_2(X,Y,Z)=\sum m(0,2,4,6)\;\;\;\;F_3(X,Y,Z)=\sum m(3,4,5,7)$
+
+<img src="/Users/sangeunlee/lisy/타임랩스/rom.png" alt="rom" style="zoom:60%;" />
 
 ## 4. PLD
 
+프로그램이 가능한 논리장치
+
+프로그램이 가능한 전자 퓨즈선으로 연결된 게이트의 배열로 구성된 집적회로
+
+- **PLD 형태**
+
+  1. PROM
+
+     ```mermaid
+     graph LR
+     입력-->ㄴ[고정된 AND 배열]--퓨즈-->ㄷ[프로그램 가능한 OR 배열]-->출력
+     ```
+
+  2. PLA
+
+     ```mermaid
+     graph LR
+     입력--퓨즈-->ㄴ[프로그램 가능한 AND 배열]--퓨즈-->ㄷ[프로그램 가능한 OR 배열]-->출력
+     ```
+
+  3. PAL
+
+     ```mermaid
+     graph LR
+     입력--퓨즈-->ㄴ[프로그램 가능한 AND 배열]-->ㄷ[고정된 OR 배열]-->출력
+     ```
+
+#### - PLA
+
+ROM의 단점인 기억공간의 낭비 보완
+
+모든 입력변수를 디코딩하지 않으며, 모든 최소항도 만들지 않음
+
+크기는 입력의 수, 곱항의 수, 출력의 수로 결정
+
+#### - PAL
+
+OR 게이트 배열은 고정되어 있고, AND 게이트 배열은 프로그래밍이 가능한 소자
+
+ AND 게이트 배열만 프로그램이 가능하므로 PLA보다는 프로그래밍상 제한이 따름
+
+일반적인 PLA보다는 값이 쌈
+
+간단한 논리함수의 실현에 효과적
+
+가장 보편적으로 사용
